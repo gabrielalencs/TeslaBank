@@ -1,30 +1,42 @@
-const menuHambuge = document.querySelector(".menu-hamburger");
-const headerMenu = document.querySelector(".menu-list");
-const teste = document.querySelector(".dropdown-open");
-const dropdown = document.querySelector(".item-list-dropdown");
+const buttonMenuHamburger = document.querySelector(".menu-hamburger");
+const containerHeaderList = document.querySelector(".menu-list");
+const itemDropdownOpen = document.querySelector(".dropdown-open");
+const containerDropdown = document.querySelector(".item-list-dropdown");
 
-teste.addEventListener("click", () => {
-    dropdown.classList.toggle("open-dropdown");
+// open and close mobile menu dropdown menu
+
+itemDropdownOpen.addEventListener("click", openMenuDropdown);
+
+function openMenuDropdown() {
+    containerDropdown.classList.toggle("open-dropdown");
 
     if(window.innerWidth < 992) {
-        if (dropdown.classList.contains("open-dropdown")) {
-            headerMenu.style.height = "380px";
+        if (containerDropdown.classList.contains("open-dropdown")) {
+            containerHeaderList.style.height = "380px";
+
         } else {
-            headerMenu.style.height = "";
+            containerHeaderList.style.height = "";
         } 
     }
+}
 
-});
+// open mobile menu
 
-menuHambuge.addEventListener("click", () => {
-    menuHambuge.classList.toggle("menu-hamburger-close");
-    headerMenu.classList.toggle("menu-mobile");
-    dropdown.classList.remove("open-dropdown");
-});
+buttonMenuHamburger.addEventListener("click", openMenuMobile);
+
+function openMenuMobile() {
+    buttonMenuHamburger.classList.toggle("menu-hamburger-close");
+    containerHeaderList.classList.toggle("menu-mobile");
+
+    containerDropdown.classList.remove("open-dropdown");
+
+    containerHeaderList.style.height = "";
+}
+
 
 window.addEventListener("resize", function (event) {
     if (window.innerWidth > 992) {
-        headerMenu.classList.remove("menu-mobile");
-        menuHambuge.classList.remove("menu-hamburger-close");
+        containerHeaderList.classList.remove("menu-mobile");
+        buttonMenuHamburger.classList.remove("menu-hamburger-close");
     }
 });
