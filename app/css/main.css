@@ -140,7 +140,6 @@ img {
   height: 0;
   transition: all 0.5s;
   visibility: hidden;
-  overflow-y: hidden;
   overflow: hidden;
 }
 @media (min-width: 481px) {
@@ -156,6 +155,7 @@ img {
 @media (min-width: 992px) {
   .menu-list .item-list-dropdown {
     position: absolute;
+    margin-top: 0;
     top: 30px;
     left: -60px;
     border: 2px solid #FFF8F9;
@@ -179,8 +179,12 @@ img {
   height: 189px;
   padding: 0.5rem 0;
   visibility: visible;
-  overflow-y: visible;
   margin-top: 0;
+}
+@media (min-width: 992px) {
+  .menu-list .open-dropdown {
+    height: 220px;
+  }
 }
 
 .header-buttons {

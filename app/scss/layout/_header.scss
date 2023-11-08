@@ -116,7 +116,6 @@
         height: 0;
         transition: all .5s;
         visibility: hidden;
-        overflow-y: hidden;
         overflow: hidden;
 
         @include media.extraSmallDevices {
@@ -129,6 +128,7 @@
 
         @include media.laptops {
             position: absolute;
+            margin-top: 0;
             top: 30px;
             left: -60px;
             border: 2px solid color.$primary-light;
@@ -148,15 +148,18 @@
         }
     }
 
-    .open-dropdown {
+    .open-dropdown{
         display: flex;
         flex-direction: column;
         gap: 5px;
         height: 189px;
         padding: 0.5rem 0;
         visibility: visible;
-        overflow-y: visible;
         margin-top: 0;
+
+        @include media.laptops {
+            height: 220px;
+        }
     }
 }
 
