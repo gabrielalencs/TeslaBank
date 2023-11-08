@@ -53,10 +53,6 @@
         overflow-y: visible;
     }
 
-    .size-menu-mobile {
-        height: 380px;
-    }
-
     .list-item:nth-child(1) {
         position: relative;
     }
@@ -170,63 +166,4 @@
         display: inline-flex;
         gap: 10px;
     }
-
-    .btn {
-        border: none;
-        background-color: transparent;
-        padding: 1.2rem 3.2rem;
-        font-size: 1.8rem;
-        font-weight: 600;
-        border-radius: .4rem;
-    }
-
-    .buttons-item-1 {
-        color: color.$primary-normal;
-    }
-
-    .buttons-item-2 {
-        background-color: color.$primary-normal;
-        color: color.$white-normal;
-    }
-}
-
-// Button Menu Hamburguer
-
-.menu-hamburger {
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-    transition: all .4s;
-
-    @include media.laptops {
-        display: none;
-    }
-
-    .hamburger-line {
-        width: 100%;
-        height: .3rem;
-        background-color: color.$black-normal;
-        border-radius: .3rem;
-        position: relative;
-        transition: all .3s;
-    }
-}
-
-.menu-hamburger.menu-hamburger-close .hamburger-line-1 {
-    transform: rotate(135deg);
-    bottom: -1rem;
-}
-
-.menu-hamburger.menu-hamburger-close .hamburger-line-2 {
-    transform: scale(0);
-    opacity: 0;
-}
-
-.menu-hamburger.menu-hamburger-close .hamburger-line-3 {
-    top: -0.5rem;
-    transform: rotate(-135deg);
 }

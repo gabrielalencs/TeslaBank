@@ -74,9 +74,6 @@ img {
   visibility: visible;
   overflow-y: visible;
 }
-.menu-list .size-menu-mobile {
-  height: 380px;
-}
 .menu-list .list-item:nth-child(1) {
   position: relative;
 }
@@ -196,21 +193,6 @@ img {
     gap: 10px;
   }
 }
-.header-buttons .btn {
-  border: none;
-  background-color: transparent;
-  padding: 1.2rem 3.2rem;
-  font-size: 1.8rem;
-  font-weight: 600;
-  border-radius: 0.4rem;
-}
-.header-buttons .buttons-item-1 {
-  color: #EB3850;
-}
-.header-buttons .buttons-item-2 {
-  background-color: #EB3850;
-  color: #FFF;
-}
 
 .menu-hamburger {
   width: 3rem;
@@ -249,6 +231,25 @@ img {
 .menu-hamburger.menu-hamburger-close .hamburger-line-3 {
   top: -0.5rem;
   transform: rotate(-135deg);
+}
+
+.btn {
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 0.4rem;
+}
+
+.buttons-item-1 {
+  color: #EB3850;
+  padding: 1.2rem 3.2rem;
+  background-color: transparent;
+}
+
+.buttons-item-2 {
+  background-color: #EB3850;
+  color: #FFF;
+  padding: 1.2rem 3.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
