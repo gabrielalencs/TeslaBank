@@ -74,13 +74,13 @@
             position: absolute;
             top: 7px;
             right: -16px;
-            border-top: 0.6rem solid #FFF;
+            border-top: 0.6rem solid color.$black-normal;
             border-right: 0.6rem solid transparent;
             border-bottom: 0;
             border-left: 0.6rem solid transparent;
 
             @include media.laptops {
-                border-top: 0.6rem solid color.$black-normal;
+                border-top: 0.6rem solid color.$primary-normal;
                 right: -15px;
             }
         }
@@ -92,7 +92,7 @@
         margin: 0 3rem 2rem;
         font-size: 1.8rem;
         font-weight: 600;
-        color: #FFF;
+        color: color.$white-normal;
         transition: all .3s;
 
         @include media.extraSmallDevices {
@@ -110,18 +110,21 @@
     }
 
     .item-list-dropdown {
-        display: none;
-        background-color: #FFF;
+        background-color: color.$white-normal;
         border-radius: 6px;
-        padding: 0.5rem 0;
-        margin: 0 3rem 1.5rem;
+        margin: -2rem 3rem 1.5rem;
+        height: 0;
+        transition: all .5s;
+        visibility: hidden;
+        overflow-y: hidden;
+        overflow: hidden;
 
         @include media.extraSmallDevices {
-            margin: 0 4.5rem 2rem;
+            margin: -2rem 4.5rem 2rem;
         }
 
         @include media.smallTablets {
-            margin: 0 5.5rem 2rem;
+            margin: -2rem 5.5rem 2rem;
         }
 
         @include media.laptops {
@@ -149,6 +152,11 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+        height: 189px;
+        padding: 0.5rem 0;
+        visibility: visible;
+        overflow-y: visible;
+        margin-top: 0;
     }
 }
 
@@ -175,7 +183,7 @@
 
     .buttons-item-2 {
         background-color: color.$primary-normal;
-        color: #FFF;
+        color: color.$white-normal;
     }
 }
 
