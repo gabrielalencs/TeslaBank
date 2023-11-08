@@ -1,6 +1,14 @@
 @use '../base/colors' as color;
 @use '../base/breakpoints' as media;
 
+.btn {
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: .4rem;
+}
+
+
 // button menu hamburger mobile
 
 .menu-hamburger {
@@ -40,14 +48,6 @@
 .menu-hamburger.menu-hamburger-close .hamburger-line-3 {
     top: -0.5rem;
     transform: rotate(-135deg);
-}
-
-
-.btn {
-    border: none;
-    font-size: 1.8rem;
-    font-weight: 600;
-    border-radius: .4rem;
 }
 
 .buttons-item-1 {

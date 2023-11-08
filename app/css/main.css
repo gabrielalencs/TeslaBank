@@ -194,6 +194,13 @@ img {
   }
 }
 
+.btn {
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 0.4rem;
+}
+
 .menu-hamburger {
   width: 3rem;
   height: 3rem;
@@ -231,13 +238,6 @@ img {
 .menu-hamburger.menu-hamburger-close .hamburger-line-3 {
   top: -0.5rem;
   transform: rotate(-135deg);
-}
-
-.btn {
-  border: none;
-  font-size: 1.8rem;
-  font-weight: 600;
-  border-radius: 0.4rem;
 }
 
 .buttons-item-1 {
