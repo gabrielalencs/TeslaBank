@@ -2,6 +2,16 @@ const buttonMenuHamburger = document.querySelector(".menu-hamburger");
 const containerHeaderList = document.querySelector(".menu-list");
 const itemDropdownOpen = document.querySelector(".dropdown-open");
 const containerDropdown = document.querySelector(".item-list-dropdown");
+const headerContainer = document.querySelector(".header");
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 0) {
+        headerContainer.classList.add('header-modifier-scroll');
+    }
+    else {
+        headerContainer.classList.remove('header-modifier-scroll');
+    }
+});
 
 // open and close mobile menu dropdown menu
 
@@ -9,14 +19,14 @@ itemDropdownOpen.addEventListener("click", openMenuDropdown);
 
 function openMenuDropdown() {
     containerDropdown.classList.toggle("open-dropdown");
-    
-    if(window.innerWidth < 992) {
+
+    if (window.innerWidth < 992) {
         if (containerDropdown.classList.contains("open-dropdown")) {
             containerHeaderList.style.height = "380px";
 
         } else {
             containerHeaderList.style.height = "";
-        } 
+        }
     }
 }
 

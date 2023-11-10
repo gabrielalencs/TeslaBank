@@ -6,6 +6,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 2.5rem 3rem 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: all 100ms;
 
     @include media.extraSmallDevices {
         padding: 2.5rem 4.5rem;
@@ -21,6 +25,15 @@
         font-weight: 600;
         color: color.$primary-normal;
     }
+}
+
+.header-modifier-scroll {
+    background-color: color.$primary-normal;
+    color: color.$white-normal;
+}
+
+body {
+    margin-bottom: 5000px;
 }
 
 .menu-list {
@@ -144,7 +157,7 @@
         }
     }
 
-    .open-dropdown{
+    .open-dropdown {
         display: flex;
         flex-direction: column;
         gap: 5px;

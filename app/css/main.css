@@ -26,6 +26,10 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem 3rem 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: all 100ms;
 }
 @media (min-width: 481px) {
   .header {
@@ -42,6 +46,15 @@ img {
   font-size: 3.2rem;
   font-weight: 600;
   color: #EB3850;
+}
+
+.header-modifier-scroll {
+  background-color: #EB3850;
+  color: #FFF;
+}
+
+body {
+  margin-bottom: 5000px;
 }
 
 .menu-list {
