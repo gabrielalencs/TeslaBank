@@ -3,15 +3,62 @@ const containerHeaderList = document.querySelector(".menu-list");
 const itemDropdownOpen = document.querySelector(".dropdown-open");
 const containerDropdown = document.querySelector(".item-list-dropdown");
 const headerContainer = document.querySelector(".header");
+const itensMenuLink = document.querySelectorAll(".menu-list .item-link");
 
-window.addEventListener('scroll', function () {
+itensMenuLink.forEach((itemLink) => {
+    itemLink.addEventListener("click", (event) => {
+        event.preventDefault();
+    });
+});
+
+
+window.addEventListener("scroll", changeHeaderColorsScroll);
+
+function changeHeaderColorsScroll() {
+    const headerLogo = this.document.querySelector(".header-logo");
+    const itensMenu = this.document.querySelectorAll(".menu-list .item-link");
+    const headerButtonEnter = this.document.querySelector(".header-buttons .buttons-item-1");
+    const headerButtonOpenAccount = this.document.querySelector(".header-buttons .buttons-item-2");
+    const headerLinesButtonHamburger = this.document.querySelectorAll(".menu-hamburger .hamburger-line");
+
+
     if (window.scrollY > 0) {
-        headerContainer.classList.add('header-modifier-scroll');
+        headerContainer.classList.add('header-scroll');
+
+        headerLogo.classList.add("header-logo-scroll");
+
+        itensMenu.forEach((itemMenu) => {
+            itemMenu.classList.add("item-link-scroll");
+        });
+
+        headerButtonEnter.classList.add("buttons-item-1-scroll");
+
+        headerButtonOpenAccount.classList.add("buttons-item-2-scroll");
+
+        headerLinesButtonHamburger.forEach((lineButton) => {
+            lineButton.classList.add("hamburger-line-scroll");
+        });
+
     }
     else {
-        headerContainer.classList.remove('header-modifier-scroll');
+        headerContainer.classList.remove('header-scroll');
+
+        headerLogo.classList.remove("header-logo-scroll");
+
+        itensMenu.forEach((itemMenu) => {
+            itemMenu.classList.remove("item-link-scroll");
+        });
+
+        headerButtonEnter.classList.remove("buttons-item-1-scroll");
+
+        headerButtonOpenAccount.classList.remove("buttons-item-2-scroll");
+
+        headerLinesButtonHamburger.forEach((lineButton) => {
+            lineButton.classList.remove("hamburger-line-scroll");
+        });
     }
-});
+}
+
 
 // open and close mobile menu dropdown menu
 

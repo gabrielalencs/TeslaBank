@@ -29,7 +29,7 @@ img {
   width: 100%;
   position: fixed;
   top: 0;
-  transition: all 100ms;
+  transition: all 0.1s;
 }
 @media (min-width: 481px) {
   .header {
@@ -46,11 +46,6 @@ img {
   font-size: 3.2rem;
   font-weight: 600;
   color: #EB3850;
-}
-
-.header-modifier-scroll {
-  background-color: #EB3850;
-  color: #FFF;
 }
 
 body {
@@ -111,7 +106,6 @@ body {
 }
 @media (min-width: 992px) {
   .menu-list .list-item:nth-child(1) .item-link::after {
-    border-top: 0.6rem solid #EB3850;
     right: -15px;
   }
 }
@@ -205,6 +199,32 @@ body {
     display: inline-flex;
     gap: 10px;
   }
+}
+
+.header-scroll {
+  background-color: #EB3850;
+  color: #FFF;
+}
+
+.header .header-logo-scroll {
+  color: #FFF;
+}
+
+.menu-list .item-link-scroll {
+  color: #FFF;
+}
+
+.header-buttons .buttons-item-1-scroll {
+  color: #FFF;
+}
+
+.header-buttons .buttons-item-2-scroll {
+  background-color: #FFF;
+  color: #EB3850;
+}
+
+.header .menu-hamburger .hamburger-line-scroll {
+  background-color: #FFF;
 }
 
 .btn {
