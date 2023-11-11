@@ -59,7 +59,7 @@ body {
   font-family: "Inter", sans-serif;
   position: absolute;
   right: 0;
-  top: 40px;
+  top: 90px;
   transition: all 0.5s;
   z-index: 2;
   visibility: hidden;
@@ -67,7 +67,6 @@ body {
 }
 @media (min-width: 992px) {
   .menu-list {
-    top: 80px;
     position: static;
     height: max-content;
     background-color: transparent;
