@@ -34,16 +34,6 @@ img {
   right: -50%;
   transition: all 0.1s;
 }
-@media (min-width: 481px) {
-  .header {
-    padding: 2.5rem 4.5rem;
-  }
-}
-@media (min-width: 768px) {
-  .header {
-    padding: 2.5rem 5.5rem;
-  }
-}
 @media (min-width: 1200px) {
   .header {
     padding: 2.5rem 15rem;
@@ -239,6 +229,15 @@ img {
 
 .header .menu-hamburger .hamburger-line-scroll {
   background-color: #FFF;
+}
+
+.main-home {
+  margin-top: 150px;
+  padding: 0 3rem;
+}
+.main-home .content-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 48px;
 }
 
 .btn {

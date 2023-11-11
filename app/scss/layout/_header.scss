@@ -14,14 +14,6 @@
     right: -50%;
     transition: all .1s;
 
-    @include media.extraSmallDevices {
-        padding: 2.5rem 4.5rem;
-    }
-
-    @include media.smallTablets {
-        padding: 2.5rem 5.5rem;
-    }
-
     @include media.desktops {
         padding: 2.5rem 15rem;
     }

@@ -1,3 +1,12 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
 
+.main-home {
+    margin-top: 150px;
+    padding: 0 3rem;
+
+    .content-title {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 48px;
+    }
+}
