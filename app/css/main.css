@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #FFF;
+}
+
 :root {
   font-size: 62.5%;
 }
@@ -201,8 +205,8 @@ img {
 }
 
 .header-scroll {
-  background: rgb(243, 98, 118);
-  background: linear-gradient(180deg, rgb(234, 58, 82) 0%, rgb(234, 58, 82) 100%);
+  background: rgb(217, 54, 76);
+  background: linear-gradient(180deg, rgb(217, 54, 76) 0%, rgb(235, 56, 80) 58%);
   color: #FFF;
 }
 
@@ -232,12 +236,47 @@ img {
 }
 
 .main-home {
-  margin-top: 150px;
+  margin: 150px 0;
   padding: 0 3rem;
 }
 .main-home .content-title {
   font-family: "DM Sans", sans-serif;
-  font-size: 48px;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 5.28rem;
+}
+.main-home .content-title span {
+  color: #EB3850;
+}
+.main-home .content-description {
+  margin-top: 2rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  color: #1A191E;
+  font-weight: 500;
+  line-height: 2.88rem;
+}
+.main-home .content-benefits {
+  margin: 3rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+}
+.main-home .content-benefits .benefits-item {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.main-home .content-benefits .benefits-item img {
+  width: 2.6rem;
+}
+.main-home .cta-download-app {
+  display: none;
+}
+.main-home .home-cards {
+  display: none;
 }
 
 .btn {
@@ -245,6 +284,7 @@ img {
   font-size: 1.8rem;
   font-weight: 600;
   border-radius: 0.4rem;
+  transition: all 0.3s;
 }
 
 .menu-hamburger {
@@ -296,6 +336,33 @@ img {
   background-color: #EB3850;
   color: #FFF;
   padding: 1.2rem 3.2rem;
+}
+.buttons-item-2:hover {
+  background-color: #B6182D;
+}
+
+.cta-button {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #EB3850;
+  color: #FFF;
+  text-align: center;
+}
+.cta-button span {
+  margin-top: 5px;
+  transition: all 0.3s;
+  width: 24px;
+}
+.cta-button:hover {
+  background-color: #B6182D;
+}
+.cta-button:hover span {
+  transform: scale(1.2);
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

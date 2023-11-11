@@ -2,11 +2,53 @@
 @use '../base/colors' as color;
 
 .main-home {
-    margin-top: 150px;
+    margin: 150px 0;
     padding: 0 3rem;
 
     .content-title {
         font-family: 'DM Sans', sans-serif;
-        font-size: 48px;
+        font-size: 4.8rem;
+        font-weight: 600;
+        line-height: 5.28rem;
+
+        span {
+            color: color.$primary-normal;
+        }
+    }
+
+    .content-description {
+        margin-top: 2rem;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.8rem;
+        color: color.$black-normal;
+        font-weight: 500;
+        line-height: 2.88rem;
+    }
+
+    .content-benefits {
+        margin: 3rem 0 4rem;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+
+        .benefits-item {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+
+            img {
+                width: 2.6rem;
+            }
+        }
+    }
+
+    .cta-download-app {
+        display: none;
+    }
+
+    .home-cards {
+        display: none;
     }
 }

@@ -174,9 +174,11 @@
     }
 }
 
+// classes when scroll is activated
+
 .header-scroll {
-    background: rgb(243, 98, 118);
-    background: linear-gradient(180deg, rgb(234, 58, 82) 0%, rgb(234, 58, 82) 100%);
+    background: rgb(217,54,76);
+    background: linear-gradient(180deg, rgba(217,54,76,1) 0%, rgba(235,56,80,1) 58%);
     color: color.$white-normal;
 }
 
