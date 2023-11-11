@@ -15,11 +15,12 @@ itensMenuLink.forEach((itemLink) => {
 window.addEventListener("scroll", changeHeaderColorsScroll);
 
 function changeHeaderColorsScroll() {
-    const headerLogo = this.document.querySelector(".header-logo");
-    const itensMenu = this.document.querySelectorAll(".menu-list .item-link");
-    const headerButtonEnter = this.document.querySelector(".header-buttons .buttons-item-1");
-    const headerButtonOpenAccount = this.document.querySelector(".header-buttons .buttons-item-2");
-    const headerLinesButtonHamburger = this.document.querySelectorAll(".menu-hamburger .hamburger-line");
+    const headerLogo = document.querySelector(".header-logo");
+    const itensMenu = document.querySelectorAll(".menu-list .item-link");
+    const caretMenuDropdown = document.querySelector(".item-link .item-link-caret");
+    const headerButtonEnter = document.querySelector(".header-buttons .buttons-item-1");
+    const headerButtonOpenAccount = document.querySelector(".header-buttons .buttons-item-2");
+    const headerLinesButtonHamburger = document.querySelectorAll(".menu-hamburger .hamburger-line");
 
 
     if (window.scrollY > 0) {
@@ -30,6 +31,8 @@ function changeHeaderColorsScroll() {
         itensMenu.forEach((itemMenu) => {
             itemMenu.classList.add("item-link-scroll");
         });
+
+        caretMenuDropdown.classList.add("item-link-caret-scroll");
 
         headerButtonEnter.classList.add("buttons-item-1-scroll");
 
@@ -49,6 +52,8 @@ function changeHeaderColorsScroll() {
             itemMenu.classList.remove("item-link-scroll");
         });
 
+        caretMenuDropdown.classList.remove("item-link-caret-scroll");
+
         headerButtonEnter.classList.remove("buttons-item-1-scroll");
 
         headerButtonOpenAccount.classList.remove("buttons-item-2-scroll");
@@ -62,6 +67,7 @@ function changeHeaderColorsScroll() {
 
 // open and close mobile menu dropdown menu
 
+
 itemDropdownOpen.addEventListener("click", openMenuDropdown);
 
 function openMenuDropdown() {
@@ -72,8 +78,6 @@ function openMenuDropdown() {
     } else {
         containerHeaderList.style.height = "";
     }
-
-    
 }
 
 // open mobile menu
@@ -94,5 +98,7 @@ window.addEventListener("resize", function (event) {
     if (window.innerWidth > 992) {
         containerHeaderList.classList.remove("menu-mobile");
         buttonMenuHamburger.classList.remove("menu-hamburger-close");
+        containerDropdown.classList.remove("open-dropdown");
+        containerHeaderList.style.height = "";
     }
 });

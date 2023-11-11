@@ -1,7 +1,12 @@
 @use '../base/colors' as color;
 @use '../base/breakpoints' as media;
 
+.header-container {
+    background-color: yellow;
+}
+
 .header {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,6 +14,8 @@
     width: 100%;
     position: fixed;
     top: 0;
+    left: -50%;
+    right: -50%;
     transition: all .1s;
 
     @include media.extraSmallDevices {
@@ -17,6 +24,14 @@
 
     @include media.smallTablets {
         padding: 2.5rem 5.5rem;
+    }
+
+    @include media.desktops {
+        padding: 2.5rem 15rem;
+    }
+
+    @include media.extraLargeScreens {
+        padding: 2.5rem 35rem;
     }
 
     .header-logo {
@@ -74,7 +89,7 @@ body {
             margin-top: 0;
         }
 
-        &::after {
+        &-caret {
             content: "";
             position: absolute;
             top: 7px;
@@ -97,7 +112,6 @@ body {
         font-size: 1.8rem;
         font-weight: 600;
         color: color.$white-normal;
-        transition: all .3s;
 
         @include media.extraSmallDevices {
             margin: 0 4.5rem 2rem;
@@ -176,6 +190,7 @@ body {
     }
 }
 
+
 .header-scroll {
     background-color: color.$primary-normal;
     color: color.$white-normal;
@@ -187,6 +202,10 @@ body {
 
 .menu-list .item-link-scroll {
     color: color.$white-normal;
+}
+
+.menu-list .list-item:nth-child(1) .item-link-caret-scroll {
+    border-top-color: color.$white-normal;
 }
 
 .header-buttons .buttons-item-1-scroll {

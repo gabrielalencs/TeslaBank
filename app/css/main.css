@@ -21,7 +21,12 @@ img {
   width: 100%;
 }
 
+.header-container {
+  background-color: yellow;
+}
+
 .header {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,6 +34,8 @@ img {
   width: 100%;
   position: fixed;
   top: 0;
+  left: -50%;
+  right: -50%;
   transition: all 0.1s;
 }
 @media (min-width: 481px) {
@@ -39,6 +46,16 @@ img {
 @media (min-width: 768px) {
   .header {
     padding: 2.5rem 5.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 2.5rem 15rem;
+  }
+}
+@media (min-width: 1920px) {
+  .header {
+    padding: 2.5rem 35rem;
   }
 }
 .header .header-logo {
@@ -94,7 +111,7 @@ body {
     margin-top: 0;
   }
 }
-.menu-list .list-item:nth-child(1) .item-link::after {
+.menu-list .list-item:nth-child(1) .item-link-caret {
   content: "";
   position: absolute;
   top: 7px;
@@ -105,7 +122,7 @@ body {
   border-left: 0.6rem solid transparent;
 }
 @media (min-width: 992px) {
-  .menu-list .list-item:nth-child(1) .item-link::after {
+  .menu-list .list-item:nth-child(1) .item-link-caret {
     right: -15px;
   }
 }
@@ -116,7 +133,6 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
   color: #FFF;
-  transition: all 0.3s;
 }
 @media (min-width: 481px) {
   .menu-list .item-link,
@@ -212,6 +228,10 @@ body {
 
 .menu-list .item-link-scroll {
   color: #FFF;
+}
+
+.menu-list .list-item:nth-child(1) .item-link-caret-scroll {
+  border-top-color: #FFF;
 }
 
 .header-buttons .buttons-item-1-scroll {
