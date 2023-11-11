@@ -67,14 +67,13 @@ itemDropdownOpen.addEventListener("click", openMenuDropdown);
 function openMenuDropdown() {
     containerDropdown.classList.toggle("open-dropdown");
 
-    if (window.innerWidth < 992) {
-        if (containerDropdown.classList.contains("open-dropdown")) {
-            containerHeaderList.style.height = "380px";
-
-        } else {
-            containerHeaderList.style.height = "";
-        }
+    if (window.innerWidth < 992 && containerDropdown.classList.contains("open-dropdown")) {
+        containerHeaderList.style.height = "380px";
+    } else {
+        containerHeaderList.style.height = "";
     }
+
+    
 }
 
 // open mobile menu

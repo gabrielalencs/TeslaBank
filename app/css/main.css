@@ -25,7 +25,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5rem 3rem 0;
+  padding: 2.5rem 3rem;
   width: 100%;
   position: fixed;
   top: 0;
