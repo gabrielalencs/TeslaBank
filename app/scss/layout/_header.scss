@@ -38,7 +38,6 @@ body {
     background-color: color.$primary-normal;
     font-family: 'Inter', sans-serif;
     position: absolute;
-    top: 80px;
     right: 0;
     transition: all .5s;
     z-index: 2;
@@ -46,6 +45,7 @@ body {
     overflow-y: hidden;
 
     @include media.laptops {
+        top: 80px;
         position: static;
         height: max-content;
         background-color: transparent;

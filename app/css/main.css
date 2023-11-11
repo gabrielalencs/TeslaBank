@@ -58,7 +58,6 @@ body {
   background-color: #EB3850;
   font-family: "Inter", sans-serif;
   position: absolute;
-  top: 80px;
   right: 0;
   transition: all 0.5s;
   z-index: 2;
@@ -67,6 +66,7 @@ body {
 }
 @media (min-width: 992px) {
   .menu-list {
+    top: 80px;
     position: static;
     height: max-content;
     background-color: transparent;
