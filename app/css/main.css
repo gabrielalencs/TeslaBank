@@ -59,7 +59,7 @@ body {
   font-family: "Inter", sans-serif;
   position: absolute;
   right: 0;
-  top: 90px;
+  top: 80px;
   transition: all 0.5s;
   z-index: 2;
   visibility: hidden;
