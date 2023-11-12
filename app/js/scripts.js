@@ -11,9 +11,7 @@ itensMenuLink.forEach((itemLink) => {
     });
 });
 
-
 // open and close mobile menu dropdown menu
-
 
 itemDropdownOpen.addEventListener("click", openMenuDropdown);
 
@@ -39,7 +37,6 @@ function openMenuMobile() {
 
     containerHeaderList.style.height = "";
 }
-
 
 window.addEventListener("resize", function (event) {
     if (window.innerWidth > 992) {
