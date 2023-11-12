@@ -3,12 +3,12 @@
 
 .main-home {
     padding: 0 3rem;
-    margin: 50px auto 0;
-    max-width: 1300px;
+    margin: 5rem auto 0;
+    max-width: 130rem;
 
     @include media.laptops {
         display: flex;
-        gap: 25px;
+        gap: 2.5rem;
     }
 
     @include media.desktops {
@@ -16,12 +16,6 @@
             flex: 3;
             display: flex;
             flex-direction: column;
-        }
-
-        .home-cards {
-            width: 370px;
-            display: flex;
-            justify-content: flex-end;
         }
     }
 
@@ -73,7 +67,7 @@
         }
 
         @include media.desktops {
-            width: 700px;
+            width: 70rem;
         }
     }
 
@@ -85,7 +79,7 @@
 
         @include media.smallTablets {
             flex-direction: row;
-            gap: 40px;
+            gap: 4rem;
         }
 
         @include media.desktops {
@@ -116,7 +110,7 @@
         }
 
         .cta-button {
-            width: 260px;
+            width: 26rem;
         }
     }
 
@@ -125,7 +119,7 @@
 
         @include media.extraSmallDevices {
             display: flex;
-            gap: 40px;
+            gap: 4rem;
 
             img {
                 transition: all .3s;
@@ -141,7 +135,9 @@
         display: none;
 
         @include media.desktops {
-            display: block;
+            width: 37rem;
+            display: flex;
+            justify-content: flex-end;
         }
     }
 }
