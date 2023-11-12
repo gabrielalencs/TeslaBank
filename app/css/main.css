@@ -190,55 +190,55 @@ img {
   }
 }
 
-.main-home {
+.s-home {
   padding: 0 3rem;
   margin: 5rem auto 0;
   max-width: 130rem;
 }
 @media (min-width: 992px) {
-  .main-home {
+  .s-home {
     display: flex;
     gap: 2.5rem;
   }
 }
 @media (min-width: 1200px) {
-  .main-home .home-content {
+  .s-home .home-content {
     flex: 3;
     display: flex;
     flex-direction: column;
   }
 }
-.main-home .content-title {
+.s-home .content-title {
   font-family: "DM Sans", sans-serif;
   font-size: 4.8rem;
   font-weight: 600;
   line-height: 5.28rem;
   transition: all 0.3s;
 }
-.main-home .content-title br {
+.s-home .content-title br {
   display: none;
 }
 @media (min-width: 768px) {
-  .main-home .content-title br {
+  .s-home .content-title br {
     display: block;
   }
 }
 @media (min-width: 768px) {
-  .main-home .content-title {
+  .s-home .content-title {
     font-size: 6.4rem;
     line-height: 7.04rem;
   }
 }
 @media (min-width: 992px) {
-  .main-home .content-title {
+  .s-home .content-title {
     font-size: 8.8rem;
     line-height: 8.68rem;
   }
 }
-.main-home .content-title span {
+.s-home .content-title span {
   color: #EB3850;
 }
-.main-home .content-description {
+.s-home .content-description {
   margin-top: 2rem;
   font-family: "Inter", sans-serif;
   font-size: 1.8rem;
@@ -247,39 +247,39 @@ img {
   line-height: 2.88rem;
 }
 @media (min-width: 768px) {
-  .main-home .content-description {
+  .s-home .content-description {
     font-size: 2.4rem;
     line-height: 3.84rem;
   }
 }
 @media (min-width: 992px) {
-  .main-home .content-description {
+  .s-home .content-description {
     font-size: 2.6rem;
   }
 }
 @media (min-width: 1200px) {
-  .main-home .content-description {
+  .s-home .content-description {
     width: 70rem;
   }
 }
-.main-home .content-benefits {
+.s-home .content-benefits {
   margin: 3rem 0 4rem;
   display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
 }
 @media (min-width: 768px) {
-  .main-home .content-benefits {
+  .s-home .content-benefits {
     flex-direction: row;
     gap: 4rem;
   }
 }
 @media (min-width: 1200px) {
-  .main-home .content-benefits {
+  .s-home .content-benefits {
     margin: 5rem 0 5rem;
   }
 }
-.main-home .content-benefits .benefits-item {
+.s-home .content-benefits .benefits-item {
   display: flex;
   gap: 1.5rem;
   font-size: 1.8rem;
@@ -287,46 +287,74 @@ img {
   margin-bottom: 2rem;
 }
 @media (min-width: 1200px) {
-  .main-home .content-benefits .benefits-item {
+  .s-home .content-benefits .benefits-item {
     font-size: 2.3rem;
   }
 }
-.main-home .content-benefits .benefits-item img {
+.s-home .content-benefits .benefits-item img {
   width: 2.6rem;
 }
 @media (min-width: 481px) {
-  .main-home .home-group-cta {
+  .s-home .home-group-cta {
     display: flex;
     gap: 5rem;
   }
-  .main-home .cta-button {
+  .s-home .cta-button {
     width: 26rem;
   }
 }
-.main-home .cta-download-app {
+.s-home .cta-download-app {
   display: none;
 }
 @media (min-width: 481px) {
-  .main-home .cta-download-app {
+  .s-home .cta-download-app {
     display: flex;
     gap: 4rem;
   }
-  .main-home .cta-download-app img {
+  .s-home .cta-download-app img {
     transition: all 0.3s;
   }
-  .main-home .cta-download-app img:hover {
+  .s-home .cta-download-app img:hover {
     transform: scale(1.2);
   }
 }
-.main-home .home-cards {
+.s-home .home-cards {
   display: none;
 }
 @media (min-width: 1200px) {
-  .main-home .home-cards {
+  .s-home .home-cards {
     width: 37rem;
     display: flex;
     justify-content: flex-end;
   }
+}
+
+.s-about {
+  padding: 0 3rem;
+  margin: 8rem auto 0;
+  max-width: 130rem;
+}
+.s-about .about-image {
+  display: none;
+}
+.s-about img {
+  width: 100px;
+}
+.s-about .content-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+}
+.s-about .content-title span {
+  color: #EB3850;
+}
+.s-about .content-description {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-weight: 500;
+  margin-top: 2rem;
 }
 
 .btn {
