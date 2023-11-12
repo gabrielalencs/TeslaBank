@@ -2,14 +2,53 @@
 @use '../base/colors' as color;
 
 .main-home {
-    margin: 150px 0;
     padding: 0 3rem;
+    margin: 50px auto 0;
+    max-width: 1300px;
+
+    @include media.laptops {
+        display: flex;
+        gap: 25px;
+    }
+
+    @include media.desktops {
+        .home-content {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .home-cards {
+            width: 370px;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
 
     .content-title {
         font-family: 'DM Sans', sans-serif;
         font-size: 4.8rem;
         font-weight: 600;
         line-height: 5.28rem;
+        transition: all .3s;
+
+        br {
+            display: none;
+
+            @include media.smallTablets {
+                display: block;
+            }
+        }
+
+        @include media.smallTablets {
+            font-size: 6.4rem;
+            line-height: 7.04rem;
+        }
+
+        @include media.laptops {
+            font-size: 8.8rem;
+            line-height: 8.68rem;
+        }
 
         span {
             color: color.$primary-normal;
@@ -23,6 +62,19 @@
         color: color.$black-normal;
         font-weight: 500;
         line-height: 2.88rem;
+
+        @include media.smallTablets {
+            font-size: 2.4rem;  
+            line-height: 3.84rem;
+        }
+
+        @include media.laptops {
+            font-size: 2.6rem;
+        }
+
+        @include media.desktops {
+            width: 700px;
+        }
     }
 
     .content-benefits {
@@ -31,6 +83,15 @@
         flex-direction: column;
         font-family: 'Inter', sans-serif;
 
+        @include media.smallTablets {
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        @include media.desktops {
+            margin: 5rem 0 5rem;
+        }
+
         .benefits-item {
             display: flex;
             gap: 1.5rem;
@@ -38,17 +99,49 @@
             font-weight: 500;
             margin-bottom: 2rem;
 
+            @include media.desktops {
+                font-size: 2.3rem;
+            }
+
             img {
                 width: 2.6rem;
             }
         }
     }
 
+    @include media.extraSmallDevices {
+        .home-group-cta {
+            display: flex;
+            gap: 5rem;
+        }
+
+        .cta-button {
+            width: 260px;
+        }
+    }
+
     .cta-download-app {
         display: none;
+
+        @include media.extraSmallDevices {
+            display: flex;
+            gap: 40px;
+
+            img {
+                transition: all .3s;
+            }
+
+            img:hover {
+                transform: scale(1.2);
+            }
+        }
     }
 
     .home-cards {
         display: none;
+
+        @include media.desktops {
+            display: block;
+        }
     }
 }

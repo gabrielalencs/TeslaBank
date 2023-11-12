@@ -12,59 +12,6 @@ itensMenuLink.forEach((itemLink) => {
 });
 
 
-window.addEventListener("scroll", changeHeaderColorsScroll);
-
-function changeHeaderColorsScroll() {
-    const headerLogo = document.querySelector(".header-logo");
-    const itensMenu = document.querySelectorAll(".menu-list .item-link");
-    const caretMenuDropdown = document.querySelector(".item-link .item-link-caret");
-    const headerButtonEnter = document.querySelector(".header-buttons .buttons-item-1");
-    const headerButtonOpenAccount = document.querySelector(".header-buttons .buttons-item-2");
-    const headerLinesButtonHamburger = document.querySelectorAll(".menu-hamburger .hamburger-line");
-
-
-    if (window.scrollY > 0) {
-        headerContainer.classList.add('header-scroll');
-
-        headerLogo.classList.add("header-logo-scroll");
-
-        itensMenu.forEach((itemMenu) => {
-            itemMenu.classList.add("item-link-scroll");
-        });
-
-        caretMenuDropdown.classList.add("item-link-caret-scroll");
-
-        headerButtonEnter.classList.add("buttons-item-1-scroll");
-
-        headerButtonOpenAccount.classList.add("buttons-item-2-scroll");
-
-        headerLinesButtonHamburger.forEach((lineButton) => {
-            lineButton.classList.add("hamburger-line-scroll");
-        });
-
-    }
-    else {
-        headerContainer.classList.remove('header-scroll');
-
-        headerLogo.classList.remove("header-logo-scroll");
-
-        itensMenu.forEach((itemMenu) => {
-            itemMenu.classList.remove("item-link-scroll");
-        });
-
-        caretMenuDropdown.classList.remove("item-link-caret-scroll");
-
-        headerButtonEnter.classList.remove("buttons-item-1-scroll");
-
-        headerButtonOpenAccount.classList.remove("buttons-item-2-scroll");
-
-        headerLinesButtonHamburger.forEach((lineButton) => {
-            lineButton.classList.remove("hamburger-line-scroll");
-        });
-    }
-}
-
-
 // open and close mobile menu dropdown menu
 
 

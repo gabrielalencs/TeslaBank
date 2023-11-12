@@ -3,24 +3,12 @@
 
 .header {
     margin: 0 auto;
+    max-width: 1300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2.5rem 3rem;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: -50%;
-    right: -50%;
     transition: all .1s;
-
-    @include media.desktops {
-        padding: 2.5rem 15rem;
-    }
-
-    @include media.extraLargeScreens {
-        padding: 2.5rem 35rem;
-    }
 
     .header-logo {
         font-family: 'DM Sans', sans-serif;
@@ -172,37 +160,4 @@
         display: inline-flex;
         gap: 10px;
     }
-}
-
-// classes when scroll is activated
-
-.header-scroll {
-    background: rgb(217,54,76);
-    background: linear-gradient(180deg, rgba(217,54,76,1) 0%, rgba(235,56,80,1) 58%);
-    color: color.$white-normal;
-}
-
-.header .header-logo-scroll {
-    color: color.$white-normal;
-}
-
-.menu-list .item-link-scroll {
-    color: color.$white-normal;
-}
-
-.menu-list .list-item:nth-child(1) .item-link-caret-scroll {
-    border-top-color: color.$white-normal;
-}
-
-.header-buttons .buttons-item-1-scroll {
-    color: color.$white-normal;
-}
-
-.header-buttons .buttons-item-2-scroll {
-    background-color: color.$white-normal;
-    color: color.$primary-normal;
-}
-
-.header .menu-hamburger .hamburger-line-scroll {
-    background-color: color.$white-normal;
 }
