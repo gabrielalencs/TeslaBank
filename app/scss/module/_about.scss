@@ -3,13 +3,14 @@
 
 .s-about {
     padding: 0 3rem;
-    margin: 8rem auto 500px;
+    margin: 10rem auto 500px;
     max-width: 130rem;
 
     @include media.desktops {
         display: flex;
         padding: 0 13rem;
-        gap: 10rem;
+        gap: 12rem;
+        margin: 15rem auto 500px;
     }
 
     .about-image {
@@ -25,10 +26,37 @@
 
             .image-icon {
                 width: 96px;
-                // position: absolute;
+                position: absolute;
                 padding: 24px;
                 border-radius: 16px;
                 background-color: #fff2f4;
+            }
+
+            .image-icon-one {
+                top: -2%;
+                left: 14%;
+                animation: icon-move 2s ease 2.9s infinite alternate;
+            }
+
+            .image-icon-two {
+                top: 40%;
+                right: -9%;
+                animation: icon-move 2s ease 1.9s infinite alternate;
+            }
+
+            .image-icon-three {
+                top: 70%;
+                left: -15%;
+                animation: icon-move 2s ease .6s infinite alternate;
+            }
+
+            @keyframes icon-move {
+                0% {
+                    transform: translate3d(0, 0, 0);
+                }
+                100% {
+                    transform: translate3d(10px, -40px, 0);
+                }
             }
         }
     }

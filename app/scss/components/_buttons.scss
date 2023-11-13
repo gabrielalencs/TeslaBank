@@ -81,18 +81,21 @@
     color: color.$white-normal;
     text-align: center;
 
-    span {
+    div {
         margin-top: 5px;
-        transition: all .3s;
-        width: 24px;    
+        transition: width .4s ease;
+        width: 24px;   
+    }
+
+    img {
+        transition: width .4s ease;
     }
 
     &:hover {
         background-color: color.$primary-dark;
     }
 
-    &:hover span {
-        transform: scale(1.2);
-        margin-left: 5px;
+    &:hover img {
+        width: 32px; 
     }
 }
