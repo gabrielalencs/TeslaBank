@@ -2,10 +2,22 @@
 @use '../base/colors' as color;
 
 .s-benefits {
+    background-color: color.$primary-light;
+
+    @include media.desktops {
+        margin-top: 10rem;
+    }
+}
+
+.container-benefits {
     padding: 5rem 3rem;
     margin: 4rem auto 0;
     max-width: 130rem;
     background-color: color.$primary-light;
+
+    @include media.desktops {
+        padding-top: 8rem;
+    }
 
     .benefits-hashtag {
         font-size: 2rem;
@@ -28,17 +40,45 @@
     }
 
     .benefits-container-cards {
-        margin-top: 2rem;
+        margin-top: 5rem;
+
+        @include media.desktops {
+            display: flex;
+            flex-direction: column;
+
+            .group-card-one,
+            .group-card-two {
+                display: flex;
+                gap: 3rem;
+            }
+
+            .group-card-two {
+                margin-top: 3rem;
+                justify-content: flex-end;
+            }
+        }
 
         .benefits-card {
             background-color: color.$white-normal;
             border-radius: 8px;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             font-family: 'Inter', sans-serif;
-            padding: 2rem;
+            padding: 2.4rem;
             display: flex;
             flex-direction: column;
             gap: 2rem;
+
+            @include media.desktops {
+                width: 290px;
+                margin-bottom: 0;
+                justify-content: flex-end;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    height: 50px;
+                }
+            }
 
             img {
                 width: 34px;
@@ -46,12 +86,30 @@
 
             h3 {
                 font-weight: 500;
-                font-size: 1.7rem;
+                font-size: 1.8rem;
             }
 
             p {
                 font-weight: 500;
-                font-size: 1.7rem;
+                font-size: 1.5rem;
+                line-height: 2.56rem;
+
+                @include media.desktops {
+                    font-size: 1.6rem;
+                }
+            }
+
+            a {
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: color.$primary-dark;
+                text-transform: uppercase;
+                text-decoration: underline;
+                transition: all .3s;
+                
+                &:hover {
+                    color: color.$primary-normal;
+                }
             }
         }
     }

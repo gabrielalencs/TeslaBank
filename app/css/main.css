@@ -151,7 +151,7 @@ img {
     margin-top: 0;
     top: 30px;
     left: -60px;
-    border: 2px solid #FFF8F9;
+    border: 2px solid #FFF2F4;
   }
 }
 .menu-list .item-list-dropdown .item-link-dropdown {
@@ -425,7 +425,7 @@ img {
 .s-about .about-card {
   padding: 0 0 4rem;
   margin-bottom: 2rem;
-  border-bottom: 0.3rem solid #FFF8F9;
+  border-bottom: 0.3rem solid #FFF2F4;
 }
 @media (min-width: 1200px) {
   .s-about .about-card {
@@ -442,7 +442,7 @@ img {
 @media (min-width: 1200px) {
   .s-about .about-card .card-icon {
     display: block;
-    background-color: #FFF8F9;
+    background-color: #FFF2F4;
     padding: 1.6rem;
     width: 6.4rem;
     height: 6.4rem;
@@ -462,51 +462,109 @@ img {
 }
 
 .s-benefits {
+  background-color: #FFF2F4;
+}
+@media (min-width: 1200px) {
+  .s-benefits {
+    margin-top: 10rem;
+  }
+}
+
+.container-benefits {
   padding: 5rem 3rem;
   margin: 4rem auto 0;
   max-width: 130rem;
-  background-color: #FFF8F9;
+  background-color: #FFF2F4;
 }
-.s-benefits .benefits-hashtag {
+@media (min-width: 1200px) {
+  .container-benefits {
+    padding-top: 8rem;
+  }
+}
+.container-benefits .benefits-hashtag {
   font-size: 2rem;
   font-family: "DM Sans", sans-serif;
   text-transform: uppercase;
-  color: #B6182D;
+  color: #CB162E;
   font-weight: 600;
 }
-.s-benefits .benefits-title {
+.container-benefits .benefits-title {
   font-family: "DM Sans", sans-serif;
   font-size: 3.2rem;
   line-height: 3.84rem;
   font-weight: 500;
   margin-top: 1rem;
 }
-.s-benefits .benefits-title span {
+.container-benefits .benefits-title span {
   color: #EB3850;
 }
-.s-benefits .benefits-container-cards {
-  margin-top: 2rem;
+.container-benefits .benefits-container-cards {
+  margin-top: 5rem;
 }
-.s-benefits .benefits-container-cards .benefits-card {
+@media (min-width: 1200px) {
+  .container-benefits .benefits-container-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-benefits .benefits-container-cards .group-card-one,
+  .container-benefits .benefits-container-cards .group-card-two {
+    display: flex;
+    gap: 3rem;
+  }
+  .container-benefits .benefits-container-cards .group-card-two {
+    margin-top: 3rem;
+    justify-content: flex-end;
+  }
+}
+.container-benefits .benefits-container-cards .benefits-card {
   background-color: #FFF;
   border-radius: 8px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   font-family: "Inter", sans-serif;
-  padding: 2rem;
+  padding: 2.4rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.s-benefits .benefits-container-cards .benefits-card img {
+@media (min-width: 1200px) {
+  .container-benefits .benefits-container-cards .benefits-card {
+    width: 290px;
+    margin-bottom: 0;
+    justify-content: flex-end;
+  }
+  .container-benefits .benefits-container-cards .benefits-card div {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+}
+.container-benefits .benefits-container-cards .benefits-card img {
   width: 34px;
 }
-.s-benefits .benefits-container-cards .benefits-card h3 {
+.container-benefits .benefits-container-cards .benefits-card h3 {
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
-.s-benefits .benefits-container-cards .benefits-card p {
+.container-benefits .benefits-container-cards .benefits-card p {
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  line-height: 2.56rem;
+}
+@media (min-width: 1200px) {
+  .container-benefits .benefits-container-cards .benefits-card p {
+    font-size: 1.6rem;
+  }
+}
+.container-benefits .benefits-container-cards .benefits-card a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #CB162E;
+  text-transform: uppercase;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+.container-benefits .benefits-container-cards .benefits-card a:hover {
+  color: #EB3850;
 }
 
 .btn {
@@ -568,7 +626,7 @@ img {
   padding: 1.2rem 3.2rem;
 }
 .buttons-item-2:hover {
-  background-color: #B6182D;
+  background-color: #CB162E;
 }
 
 .cta-button {
@@ -591,7 +649,7 @@ img {
   transition: width 0.4s ease;
 }
 .cta-button:hover {
-  background-color: #B6182D;
+  background-color: #CB162E;
 }
 .cta-button:hover img {
   width: 32px;
