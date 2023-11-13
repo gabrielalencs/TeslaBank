@@ -334,24 +334,57 @@ img {
   margin: 8rem auto 500px;
   max-width: 130rem;
 }
-.s-about img {
+.s-about .about-image {
   display: none;
 }
 .s-about .content-title {
   font-family: "DM Sans", sans-serif;
   font-size: 3.2rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 3.5rem;
 }
+@media (min-width: 768px) {
+  .s-about .content-title {
+    font-size: 4.8rem;
+  }
+}
 .s-about .content-title span {
-  color: #EB3850;
+  color: #B6182D;
 }
 .s-about .content-description {
   font-family: "Inter", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   line-height: 2.7rem;
   font-weight: 500;
-  margin-top: 2rem;
+  margin-top: 3.5rem;
+  max-width: 732px;
+}
+@media (min-width: 768px) {
+  .s-about .content-description {
+    font-size: 1.9rem;
+  }
+}
+.s-about .content-about-group {
+  margin-top: 4rem;
+}
+.s-about .about-card {
+  padding: 4rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 0.3rem solid #FFF8F9;
+}
+.s-about .about-card .card-icon {
+  display: none;
+}
+.s-about .about-card span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.s-about .about-card p {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
 }
 
 .btn {
