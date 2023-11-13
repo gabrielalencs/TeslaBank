@@ -6,8 +6,31 @@
     margin: 8rem auto 500px;
     max-width: 130rem;
 
+    @include media.desktops {
+        display: flex;
+        padding: 0 13rem;
+        gap: 10rem;
+    }
+
     .about-image {
         display: none;
+
+        @include media.desktops {
+            display: block;
+            position: relative;
+
+            .image-smartphone {
+                width: 380px;
+            }
+
+            .image-icon {
+                width: 96px;
+                // position: absolute;
+                padding: 24px;
+                border-radius: 16px;
+                background-color: #fff2f4;
+            }
+        }
     }
 
     .content-title {
@@ -17,7 +40,7 @@
         line-height: 3.5rem;
 
         @include media.smallTablets {
-            font-size: 4.8rem;
+            font-size: 4.5rem;
         }
 
         span {
@@ -39,16 +62,41 @@
     }
 
     .content-about-group {
-        margin-top: 4rem;
+        margin-top: 4.5rem;
+
+        @include media.desktops {
+            margin-top: 0;
+
+            & div:nth-last-child(1) {
+                border-bottom: none;
+            }
+        }
     }
 
     .about-card {
-        padding: 4rem 0;
+        padding: 0 0 4rem;
         margin-bottom: 2rem;
         border-bottom: 0.3rem solid color.$primary-light;
 
+        @include media.desktops {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            padding: 6rem 0;
+            margin-bottom: 0;
+        }
+
         .card-icon {
             display: none;
+
+            @include media.desktops {
+                display: block;
+                background-color: color.$primary-light;
+                padding: 1.6rem;
+                width: 6.4rem;
+                height: 6.4rem;
+                border-radius: 8px;
+            }
         }
 
         span {
