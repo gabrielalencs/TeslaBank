@@ -1,0 +1,66 @@
+@use '../base/breakpoints' as media;
+@use '../base/colors' as color;
+
+.s-depositions {
+    padding: 0 3rem;
+    margin: 10rem auto;
+    max-width: 130rem;
+
+    .depositions-hashtag {
+        font-size: 2rem;
+        font-family: 'DM Sans', sans-serif;
+        text-transform: uppercase;
+        color: color.$primary-dark;
+        font-weight: 600;
+    }
+
+    .depositions-title {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 3.2rem;
+        font-weight: 500;
+        margin-top: 1rem;
+
+        @include media.smallTablets {
+            font-size: 4.8rem;
+        }
+    }
+
+    .depostions-subtitle {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 3.2rem;
+        font-weight: 300;
+        margin-top: 0.1px;
+
+        @include media.smallTablets {
+            font-size: 4.8rem;
+        }
+    }
+
+    .depositions-peoples-container {
+        margin-top: 8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        @include media.desktops {
+            flex-direction: row;
+            gap: 8rem;
+        }
+    }
+
+    .people-container span {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 2.4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-left: 2rem;
+        border-left: 3px solid color.$primary-dark;
+    }
+
+    .people-container p {
+        font-family: 'inter', sans-serif;
+        font-size: 1.8rem;
+        line-height: 2.88rem;
+        margin-top: 2rem;
+    }
+}
