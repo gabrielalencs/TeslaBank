@@ -10,7 +10,7 @@
         display: flex;
         padding: 0 13rem;
         gap: 12rem;
-        margin: 15rem auto 500px;
+        margin: 15rem auto 0;
     }
 
     .about-image {
@@ -72,7 +72,7 @@
         }
 
         span {
-            color: color.$primary-dark;
+            color: color.$primary-normal;
         }
     }
 
@@ -91,14 +91,15 @@
 
     .content-about-group {
         margin-top: 4.5rem;
-
+        
         @include media.desktops {
             margin-top: 0;
-
-            & div:nth-last-child(1) {
-                border-bottom: none;
-            }
         }
+        
+        & div:nth-last-child(1) {
+            border-bottom: none;
+        }
+
     }
 
     .about-card {

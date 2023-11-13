@@ -1,2 +1,58 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
+
+.s-benefits {
+    padding: 5rem 3rem;
+    margin: 4rem auto 0;
+    max-width: 130rem;
+    background-color: color.$primary-light;
+
+    .benefits-hashtag {
+        font-size: 2rem;
+        font-family: 'DM Sans', sans-serif;
+        text-transform: uppercase;
+        color: color.$primary-dark;
+        font-weight: 600;
+    }
+
+    .benefits-title {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 3.2rem;
+        line-height: 3.84rem;
+        font-weight: 500;
+        margin-top: 1rem;
+
+        span {
+            color: color.$primary-normal;
+        }
+    }
+
+    .benefits-container-cards {
+        margin-top: 2rem;
+
+        .benefits-card {
+            background-color: color.$white-normal;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            font-family: 'Inter', sans-serif;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            img {
+                width: 34px;
+            }
+
+            h3 {
+                font-weight: 500;
+                font-size: 1.7rem;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 1.7rem;
+            }
+        }
+    }
+}

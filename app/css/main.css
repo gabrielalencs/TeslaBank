@@ -262,24 +262,24 @@ img {
     width: 70rem;
   }
 }
-.s-home .content-benefits {
+.s-home .content-advantage {
   margin: 3rem 0 4rem;
   display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
 }
 @media (min-width: 768px) {
-  .s-home .content-benefits {
+  .s-home .content-advantage {
     flex-direction: row;
     gap: 4rem;
   }
 }
 @media (min-width: 1200px) {
-  .s-home .content-benefits {
+  .s-home .content-advantage {
     margin: 5rem 0 5rem;
   }
 }
-.s-home .content-benefits .benefits-item {
+.s-home .content-advantage .advantage-item {
   display: flex;
   gap: 1.5rem;
   font-size: 1.8rem;
@@ -287,11 +287,11 @@ img {
   margin-bottom: 2rem;
 }
 @media (min-width: 1200px) {
-  .s-home .content-benefits .benefits-item {
+  .s-home .content-advantage .advantage-item {
     font-size: 2.3rem;
   }
 }
-.s-home .content-benefits .benefits-item img {
+.s-home .content-advantage .advantage-item img {
   width: 2.6rem;
 }
 @media (min-width: 481px) {
@@ -339,7 +339,7 @@ img {
     display: flex;
     padding: 0 13rem;
     gap: 12rem;
-    margin: 15rem auto 500px;
+    margin: 15rem auto 0;
   }
 }
 .s-about .about-image {
@@ -396,7 +396,7 @@ img {
   }
 }
 .s-about .content-title span {
-  color: #B6182D;
+  color: #EB3850;
 }
 .s-about .content-description {
   font-family: "Inter", sans-serif;
@@ -418,9 +418,9 @@ img {
   .s-about .content-about-group {
     margin-top: 0;
   }
-  .s-about .content-about-group div:nth-last-child(1) {
-    border-bottom: none;
-  }
+}
+.s-about .content-about-group div:nth-last-child(1) {
+  border-bottom: none;
 }
 .s-about .about-card {
   padding: 0 0 4rem;
@@ -459,6 +459,54 @@ img {
   font-size: 1.7rem;
   font-family: "Inter", sans-serif;
   font-weight: 500;
+}
+
+.s-benefits {
+  padding: 5rem 3rem;
+  margin: 4rem auto 0;
+  max-width: 130rem;
+  background-color: #FFF8F9;
+}
+.s-benefits .benefits-hashtag {
+  font-size: 2rem;
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+  color: #B6182D;
+  font-weight: 600;
+}
+.s-benefits .benefits-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 3.2rem;
+  line-height: 3.84rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.s-benefits .benefits-title span {
+  color: #EB3850;
+}
+.s-benefits .benefits-container-cards {
+  margin-top: 2rem;
+}
+.s-benefits .benefits-container-cards .benefits-card {
+  background-color: #FFF;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-family: "Inter", sans-serif;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.s-benefits .benefits-container-cards .benefits-card img {
+  width: 34px;
+}
+.s-benefits .benefits-container-cards .benefits-card h3 {
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+.s-benefits .benefits-container-cards .benefits-card p {
+  font-weight: 500;
+  font-size: 1.7rem;
 }
 
 .btn {
