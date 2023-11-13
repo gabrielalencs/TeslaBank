@@ -331,14 +331,11 @@ img {
 
 .s-about {
   padding: 0 3rem;
-  margin: 8rem auto 0;
+  margin: 8rem auto 500px;
   max-width: 130rem;
 }
-.s-about .about-image {
-  display: none;
-}
 .s-about img {
-  width: 100px;
+  display: none;
 }
 .s-about .content-title {
   font-family: "DM Sans", sans-serif;

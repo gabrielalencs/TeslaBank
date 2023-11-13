@@ -3,15 +3,11 @@
 
 .s-about {
     padding: 0 3rem;
-    margin: 8rem auto 0;
+    margin: 8rem auto 500px;
     max-width: 130rem;
 
-    .about-image {
-        display: none;
-    }
-
     img {
-        width: 100px;
+        display: none;
     }
 
     .content-title {
