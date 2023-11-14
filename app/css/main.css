@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #FFF;
 }
@@ -696,6 +700,7 @@ img {
   font-weight: 600;
   border-radius: 0.4rem;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .menu-hamburger {
