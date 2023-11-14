@@ -99,3 +99,23 @@
         width: 32px; 
     }
 }
+
+// button cards
+
+.cards-button-1, .cards-button-2 {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: color.$primary-normal;
+    color: color.$white-normal;
+}
+
+.cards-button-2 {
+    background-color: transparent;
+    border: 2px solid color.$primary-dark;
+    color: color.$primary-dark;
+}

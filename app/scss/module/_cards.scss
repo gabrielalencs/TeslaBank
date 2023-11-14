@@ -1,2 +1,65 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
+
+.s-cards {
+    margin: 13rem auto 0;
+    max-width: 130rem;
+    padding: 0 3rem;
+    text-align: center;
+
+    .cards-hashtag {
+        font-size: 2rem;
+        font-family: 'DM Sans', sans-serif;
+        text-transform: uppercase;
+        color: color.$primary-dark;
+        font-weight: 600;
+    }
+
+    .cards-title {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 3.2rem;
+        font-weight: 500;
+
+        @include media.smallTablets {
+            font-size: 3.8rem;
+        }
+
+        @include media.desktops {
+            font-size: 5rem;
+            width: 50rem;
+            margin: 1rem auto 0;
+            line-height: 5.5rem;
+        }
+    }
+
+    .cards-descrption {
+        font-size: 1.8rem;
+        font-family: 'inter', sans-serif;
+        font-weight: 500;
+        margin-top: 2.5rem;
+
+        @include media.smallTablets {
+            font-size: 2rem;
+            max-width: 810px;
+            margin: 2.5rem auto;
+        }
+    }
+
+    .cards-image {
+        margin-top: 5rem;
+        max-width: 50rem;
+    }
+
+    .cards-group-buttons {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 5rem auto 0;
+
+        @include media.smallTablets {
+            flex-direction: row;
+            max-width: 500px;
+        }
+    }
+}

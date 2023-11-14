@@ -628,6 +628,68 @@ img {
   margin-top: 2rem;
 }
 
+.s-cards {
+  margin: 13rem auto 0;
+  max-width: 130rem;
+  padding: 0 3rem;
+  text-align: center;
+}
+.s-cards .cards-hashtag {
+  font-size: 2rem;
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+  color: #CB162E;
+  font-weight: 600;
+}
+.s-cards .cards-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .s-cards .cards-title {
+    font-size: 3.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .s-cards .cards-title {
+    font-size: 5rem;
+    width: 50rem;
+    margin: 1rem auto 0;
+    line-height: 5.5rem;
+  }
+}
+.s-cards .cards-descrption {
+  font-size: 1.8rem;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  margin-top: 2.5rem;
+}
+@media (min-width: 768px) {
+  .s-cards .cards-descrption {
+    font-size: 2rem;
+    max-width: 810px;
+    margin: 2.5rem auto;
+  }
+}
+.s-cards .cards-image {
+  margin-top: 5rem;
+  max-width: 50rem;
+}
+.s-cards .cards-group-buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 5rem auto 0;
+}
+@media (min-width: 768px) {
+  .s-cards .cards-group-buttons {
+    flex-direction: row;
+    max-width: 500px;
+  }
+}
+
 .btn {
   border: none;
   font-size: 1.8rem;
@@ -714,6 +776,24 @@ img {
 }
 .cta-button:hover img {
   width: 32px;
+}
+
+.cards-button-1, .cards-button-2 {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 500px;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: #EB3850;
+  color: #FFF;
+}
+
+.cards-button-2 {
+  background-color: transparent;
+  border: 2px solid #CB162E;
+  color: #CB162E;
 }
 
 /*# sourceMappingURL=main.css.map */
