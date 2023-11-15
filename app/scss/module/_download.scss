@@ -1,2 +1,94 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
+
+.s-download {
+    background-color: color.$primary-light;
+}
+
+.download-container {
+    padding: 5rem 3rem;
+    margin: 10rem auto 0;
+    max-width: 130rem;
+
+    @include media.desktops {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30rem;
+        padding: 10rem 3rem;
+    }
+
+    .download-title {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 3.2rem;
+        line-height: 3.5rem;
+        font-weight: 500;
+
+        @include media.desktops {
+            font-size: 4.8rem;
+            line-height: 5.5rem;
+        }
+
+        span {
+            color: color.$primary-normal;
+        }
+    }
+
+    .download-description {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.8rem;
+        line-height: 150%;
+        font-weight: 500;
+        margin-top: 3rem;
+
+        @include media.desktops {
+            font-size: 2rem;
+        }
+    }
+
+    .download-buttons-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-top: 5rem;
+
+        @include media.smallTablets {
+            flex-direction: row;
+        }
+    }
+
+    .download-container-image {
+        display: none;
+
+        @include media.desktops {
+            display: block;
+
+            .image-background {
+                width: 380px;
+                height: 380px;
+                border-radius: 56px;
+                background-color: color.$primary-normal;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    animation: imgHeart 2s ease infinite;
+                    width: 180px;
+                }
+            }
+
+            @keyframes imgHeart {
+                0% {
+                    width: 180px;
+                }
+                50% {
+                    width: 200px;
+                }
+                100% {
+                    width: 180px;
+                }
+            }
+        }
+    }
+}

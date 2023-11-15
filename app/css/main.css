@@ -407,7 +407,7 @@ img {
   font-size: 1.7rem;
   line-height: 2.7rem;
   font-weight: 500;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
   max-width: 732px;
 }
 @media (min-width: 768px) {
@@ -694,6 +694,95 @@ img {
   }
 }
 
+.s-download {
+  background-color: #FFF2F4;
+}
+
+.download-container {
+  padding: 5rem 3rem;
+  margin: 10rem auto 0;
+  max-width: 130rem;
+}
+@media (min-width: 1200px) {
+  .download-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30rem;
+    padding: 10rem 3rem;
+  }
+}
+.download-container .download-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+  font-weight: 500;
+}
+@media (min-width: 1200px) {
+  .download-container .download-title {
+    font-size: 4.8rem;
+    line-height: 5.5rem;
+  }
+}
+.download-container .download-title span {
+  color: #EB3850;
+}
+.download-container .download-description {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: 500;
+  margin-top: 3rem;
+}
+@media (min-width: 1200px) {
+  .download-container .download-description {
+    font-size: 2rem;
+  }
+}
+.download-container .download-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .download-container .download-buttons-container {
+    flex-direction: row;
+  }
+}
+.download-container .download-container-image {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .download-container .download-container-image {
+    display: block;
+  }
+  .download-container .download-container-image .image-background {
+    width: 380px;
+    height: 380px;
+    border-radius: 56px;
+    background-color: #EB3850;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .download-container .download-container-image .image-background img {
+    animation: imgHeart 2s ease infinite;
+    width: 180px;
+  }
+  @keyframes imgHeart {
+    0% {
+      width: 180px;
+    }
+    50% {
+      width: 200px;
+    }
+    100% {
+      width: 180px;
+    }
+  }
+}
+
 .btn {
   border: none;
   font-size: 1.8rem;
@@ -701,6 +790,7 @@ img {
   border-radius: 0.4rem;
   transition: all 0.3s;
   cursor: pointer;
+  font-family: "Inter", sans-serif;
 }
 
 .menu-hamburger {
@@ -787,18 +877,66 @@ img {
   width: 100%;
   margin: 0 auto;
   max-width: 500px;
-  border-radius: 6px;
-  padding: 12px 20px;
+  padding: 1.2rem 2rem;
+  border-radius: 0.6rem;
   font-size: 2rem;
   font-weight: 600;
   background-color: #EB3850;
   color: #FFF;
+}
+@media (min-width: 768px) {
+  .cards-button-1, .cards-button-2 {
+    padding: 1.2rem 2rem;
+  }
 }
 
 .cards-button-2 {
   background-color: transparent;
   border: 2px solid #CB162E;
   color: #CB162E;
+}
+
+.download-button-1, .download-button-2 {
+  background-color: #353436;
+  padding: 0.8rem 0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+@media (min-width: 481px) {
+  .download-button-1, .download-button-2 {
+    padding: 0.8rem 3.2rem;
+    max-width: max-content;
+  }
+}
+.download-button-1 img, .download-button-2 img {
+  width: 3.2rem;
+  transition: all 0.3s;
+}
+.download-button-1:hover, .download-button-2:hover {
+  background-color: #1A191E;
+}
+.download-button-1:hover img, .download-button-2:hover img {
+  transform: scale(1.2);
+}
+.download-button-1 div, .download-button-2 div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: justify;
+}
+.download-button-1 div span, .download-button-2 div span {
+  color: #FFF;
+}
+.download-button-1 div span:nth-child(1), .download-button-2 div span:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.download-button-1 div span:nth-child(2), .download-button-2 div span:nth-child(2) {
+  font-size: 1.9rem;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */

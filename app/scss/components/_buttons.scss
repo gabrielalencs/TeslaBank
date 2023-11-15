@@ -8,6 +8,7 @@
     border-radius: .4rem;
     transition: all .3s;
     cursor: pointer;
+    font-family: 'Inter', sans-serif;
 }
 
 // button menu hamburger mobile
@@ -107,16 +108,71 @@
     width: 100%;
     margin: 0 auto;
     max-width: 500px;
-    border-radius: 6px;
-    padding: 12px 20px;
+    padding: 1.2rem 2rem;
+    border-radius: .6rem;
     font-size: 2rem;
     font-weight: 600;
     background-color: color.$primary-normal;
     color: color.$white-normal;
+    
+    @include media.smallTablets {
+        padding: 1.2rem 2rem;
+    }
 }
 
 .cards-button-2 {
     background-color: transparent;
     border: 2px solid color.$primary-dark;
     color: color.$primary-dark;
+}
+
+// button download
+
+.download-button-1, .download-button-2{
+    background-color: #353436;
+    padding: .8rem 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+
+    @include media.extraSmallDevices {
+        padding: .8rem 3.2rem;
+        max-width: max-content;
+    }
+
+    img {
+        width: 3.2rem;
+        transition: all .3s;
+    }
+
+    &:hover {
+        background-color: color.$black-normal;
+    }
+
+    &:hover img{
+        transform: scale(1.2);
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        text-align: justify;
+
+        span {
+            color: color.$white-normal;
+        }
+
+        & span:nth-child(1) {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        & span:nth-child(2) {
+            font-size: 1.9rem;
+            font-weight: 600;
+        }
+    }
 }
