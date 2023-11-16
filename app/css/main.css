@@ -872,6 +872,111 @@ img {
   }
 }
 
+.s-faq {
+  margin: 10rem auto 0;
+  max-width: 130rem;
+  padding: 0 3rem;
+  text-align: center;
+}
+.s-faq .faq-hashtag {
+  font-size: 2rem;
+  font-family: "DM Sans", sans-serif;
+  text-transform: uppercase;
+  color: #CB162E;
+  font-weight: 600;
+}
+.s-faq .faq-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .s-faq .faq-title {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .s-faq .faq-title {
+    font-size: 5rem;
+  }
+}
+.s-faq .faq-description {
+  font-size: 1.8rem;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  .s-faq .faq-description {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .s-faq .faq-description {
+    font-size: 2.6rem;
+  }
+}
+.s-faq .faq-accordion-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.s-faq .faq-accordion-container div:nth-last-child(1) {
+  border-bottom: none;
+}
+@media (min-width: 1200px) {
+  .s-faq .faq-accordion-container {
+    width: 750px;
+    margin: 5rem auto;
+  }
+}
+.s-faq .faq-accordion {
+  padding: 6rem 0;
+  border-bottom: 0.2rem solid #FFF2F4;
+}
+.s-faq .accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.s-faq .accordion-texts {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.s-faq .accordion-texts img {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .s-faq .accordion-texts img {
+    display: block;
+    padding: 16px;
+    border-radius: 8px;
+    width: 64px;
+    background-color: #fff2f4;
+  }
+}
+.s-faq .accordion-texts p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.s-faq .accordion-icon img {
+  width: 32px;
+}
+.s-faq .accordion-content {
+  padding: 3rem 1.5rem 0;
+  font-family: "inter", sans-serif;
+  display: none;
+}
+.s-faq .accordion-content p {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
 .btn {
   border: none;
   font-size: 1.8rem;

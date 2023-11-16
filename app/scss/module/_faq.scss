@@ -1,2 +1,114 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
+
+.s-faq {
+    margin: 10rem auto 0;
+    max-width: 130rem;
+    padding: 0 3rem;
+    text-align: center;
+
+    .faq-hashtag {
+        font-size: 2rem;
+        font-family: 'DM Sans', sans-serif;
+        text-transform: uppercase;
+        color: color.$primary-dark;
+        font-weight: 600;
+    }
+
+    .faq-title {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 3.2rem;
+        font-weight: 500;
+        margin-top: 2rem;
+
+        @include media.smallTablets {
+            font-size: 4rem;
+        }
+
+        @include media.desktops {
+            font-size: 5rem;
+        }
+    }
+
+    .faq-description {
+        font-size: 1.8rem;
+        font-family: 'inter', sans-serif;
+        font-weight: 500;
+        margin-top: 1.5rem;
+
+        @include media.smallTablets {
+            font-size: 2rem;
+        }
+
+        @include media.desktops {
+            font-size: 2.6rem;
+        }
+    }
+
+    .faq-accordion-container {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+
+        & div:nth-last-child(1) {
+            border-bottom: none;
+        }
+
+        @include media.desktops {
+            width: 750px;
+            margin: 5rem auto;
+        }
+    }
+
+    .faq-accordion {
+        padding: 6rem 0;
+        border-bottom: 0.2rem solid color.$primary-light;
+    }
+
+    .accordion-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .accordion-texts {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+
+        img {
+            display: none;
+
+            @include media.desktops {
+                display: block;
+                padding: 16px;
+                border-radius: 8px;
+                width: 64px;
+                background-color: #fff2f4;
+            }
+        }
+
+        p {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+
+    .accordion-icon img {
+        width: 32px;
+    }
+
+    .accordion-content {
+        padding: 3rem 1.5rem 0;
+        font-family: 'inter', sans-serif;
+        display: none;
+
+        p {
+            font-size: 1.9rem;
+            font-weight: 500;
+        }
+    }
+}
