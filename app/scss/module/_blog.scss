@@ -15,6 +15,10 @@
         font-size: 3.2rem;
         font-family: 'DM Sans', sans-serif;
         font-weight: 500;
+
+        @include media.desktops {
+            font-size: 4.8rem;
+        }
     }
 
     .blog-link {
@@ -27,6 +31,10 @@
         color: color.$primary-normal;
         font-weight: 600;
 
+        @include media.desktops {
+            font-size: 2rem;
+        }
+
         &:hover {
             color: color.$primary-dark;
         }
@@ -37,10 +45,10 @@
     }
 
     .blog-card-container {
-        margin-top: 5rem;
+        margin-top: 6rem;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 4rem;
 
         @include media.desktops {
             flex-direction: row;
@@ -61,7 +69,7 @@
 
             @include media.desktops {
                 height: 350px;
-                width: 360px;
+                // width: 360px;
             }
         }
 
@@ -76,10 +84,9 @@
             font-size: 1.7rem;
             margin-top: 1.5rem;
             font-weight: 500;
-            padding-right: 3px;
 
             @include media.desktops {
-                width: 360px;
+                width: 390px;
             }
         }
     }
