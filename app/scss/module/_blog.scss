@@ -1,2 +1,86 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
+
+.s-blog {
+    margin: 10rem auto 0;
+    max-width: 130rem;
+    padding: 0 3rem;
+
+    .blog-texts {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blog-title {
+        font-size: 3.2rem;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 500;
+    }
+
+    .blog-link {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        font-size: 2rem;
+        font-family: 'inter', sans-serif;
+        transition: all .3s;
+        color: color.$primary-normal;
+        font-weight: 600;
+
+        &:hover {
+            color: color.$primary-dark;
+        }
+
+        img {
+            width: 30px;
+        }
+    }
+
+    .blog-card-container {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        @include media.desktops {
+            flex-direction: row;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .blog-card {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .card-image {
+            object-fit: cover;
+            height: 250px;
+            border-radius: 1.6rem;
+
+            @include media.desktops {
+                height: 350px;
+                width: 360px;
+            }
+        }
+
+        h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 500;
+        }
+
+        p {
+            font-family: 'inter', sans-serif;
+            font-size: 1.7rem;
+            margin-top: 1.5rem;
+            font-weight: 500;
+            padding-right: 3px;
+
+            @include media.desktops {
+                width: 360px;
+            }
+        }
+    }
+}
