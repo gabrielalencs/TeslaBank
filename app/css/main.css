@@ -632,6 +632,7 @@ h1::selection, h2::selection, h3::selection, span::selection, p::selection, img:
   font-size: 3.2rem;
   font-weight: 500;
   margin-top: 1rem;
+  line-height: 100%;
 }
 .s-depositions .depositions-title span {
   color: #EB3850;
@@ -663,6 +664,9 @@ h1::selection, h2::selection, h3::selection, span::selection, p::selection, img:
     flex-direction: row;
     gap: 8rem;
   }
+}
+.s-depositions .people-container {
+  width: 33rem;
 }
 .s-depositions .people-container span {
   font-family: "DM Sans", sans-serif;
