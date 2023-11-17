@@ -1,5 +1,6 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
+@use '../utilities/mixins' as mixin;
 
 .s-cards {
     margin: 13rem auto 0;
@@ -8,17 +9,11 @@
     text-align: center;
 
     .cards-hashtag {
-        font-size: 2rem;
-        font-family: 'DM Sans', sans-serif;
-        text-transform: uppercase;
-        color: color.$primary-dark;
-        font-weight: 600;
+        @include mixin.sectionHashtagStyles;
     }
 
     .cards-title {
-        font-family: 'DM Sans', sans-serif;
-        font-size: 3.2rem;
-        font-weight: 500;
+        @include mixin.sectionsTitleStyles;
 
         @include media.smallTablets {
             font-size: 3.8rem;

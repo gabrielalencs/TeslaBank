@@ -628,6 +628,9 @@ p, h1, h2, h3 {
   font-weight: 500;
   margin-top: 1rem;
 }
+.s-depositions .depositions-title span {
+  color: #EB3850;
+}
 @media (min-width: 768px) {
   .s-depositions .depositions-title {
     font-size: 4.8rem;
@@ -667,7 +670,6 @@ p, h1, h2, h3 {
 .s-depositions .people-container p {
   font-family: "inter", sans-serif;
   font-size: 1.8rem;
-  line-height: 2.88rem;
   margin-top: 2rem;
 }
 
@@ -688,6 +690,9 @@ p, h1, h2, h3 {
   font-family: "DM Sans", sans-serif;
   font-size: 3.2rem;
   font-weight: 500;
+}
+.s-cards .cards-title span {
+  color: #EB3850;
 }
 @media (min-width: 768px) {
   .s-cards .cards-title {
