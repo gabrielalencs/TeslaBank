@@ -198,6 +198,40 @@ img {
   }
 }
 
+.footer {
+  background-color: #CB162E;
+}
+
+.container-footer {
+  margin: 7rem auto 0;
+  max-width: 130rem;
+  padding: 4rem 3rem;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.container-footer p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #FFF2F4;
+}
+.container-footer img {
+  width: 50px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(76%) saturate(2%) hue-rotate(62deg) brightness(116%) contrast(101%);
+  display: none;
+}
+@media (min-width: 992px) {
+  .container-footer img {
+    display: block;
+  }
+}
+
 .s-home {
   padding: 0 3rem;
   margin: 5rem auto 0;
