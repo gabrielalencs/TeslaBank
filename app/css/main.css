@@ -393,37 +393,29 @@ img {
     position: relative;
   }
   .s-about .about-image .image-smartphone {
-    width: 380px;
+    width: 38rem;
   }
   .s-about .about-image .image-icon {
-    width: 96px;
+    width: 9.6rem;
     position: absolute;
-    padding: 24px;
-    border-radius: 16px;
-    background-color: #fff2f4;
+    padding: 2.4rem;
+    border-radius: 1.6rem;
+    background-color: #FFF2F4;
   }
   .s-about .about-image .image-icon-one {
     top: -2%;
     left: 14%;
-    animation: icon-move 2s ease 2.9s infinite alternate;
+    animation: moveIcon 2s ease 2.9s infinite alternate;
   }
   .s-about .about-image .image-icon-two {
     top: 40%;
     right: -9%;
-    animation: icon-move 2s ease 1.9s infinite alternate;
+    animation: moveIcon 2s ease 1.9s infinite alternate;
   }
   .s-about .about-image .image-icon-three {
     top: 70%;
     left: -15%;
-    animation: icon-move 2s ease 0.6s infinite alternate;
-  }
-  @keyframes icon-move {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-    100% {
-      transform: translate3d(10px, -40px, 0);
-    }
+    animation: moveIcon 2s ease 0.6s infinite alternate;
   }
 }
 .s-about .content-title {
@@ -446,7 +438,7 @@ img {
   line-height: 2.7rem;
   font-weight: 500;
   margin-top: 3rem;
-  max-width: 732px;
+  max-width: 73.2rem;
 }
 @media (min-width: 768px) {
   .s-about .content-description {
@@ -488,7 +480,7 @@ img {
     padding: 1.6rem;
     width: 6.4rem;
     height: 6.4rem;
-    border-radius: 8px;
+    border-radius: 0.8rem;
   }
 }
 .s-about .about-card span {
@@ -805,19 +797,8 @@ img {
     justify-content: center;
   }
   .download-container .download-container-image .image-background img {
-    animation: imgHeart 2s ease infinite;
+    animation: imgPulsate 2s ease infinite;
     width: 180px;
-  }
-  @keyframes imgHeart {
-    0% {
-      width: 180px;
-    }
-    50% {
-      width: 200px;
-    }
-    100% {
-      width: 180px;
-    }
   }
 }
 
@@ -844,7 +825,7 @@ img {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "inter", sans-serif;
   transition: all 0.3s;
   color: #EB3850;
@@ -886,7 +867,7 @@ img {
 }
 @media (min-width: 1200px) {
   .s-blog .blog-card-container .card-image {
-    height: 350px;
+    height: 35rem;
   }
 }
 .s-blog .blog-card-container h3 {
@@ -902,7 +883,7 @@ img {
 }
 @media (min-width: 1200px) {
   .s-blog .blog-card-container p {
-    width: 390px;
+    width: 39rem;
   }
 }
 
@@ -1174,6 +1155,26 @@ img {
 .download-button-1 div span:nth-child(2), .download-button-2 div span:nth-child(2) {
   font-size: 1.9rem;
   font-weight: 600;
+}
+
+@keyframes moveIcon {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(1rem, -4rem, 0);
+  }
+}
+@keyframes imgPulsate {
+  0% {
+    width: 180px;
+  }
+  50% {
+    width: 200px;
+  }
+  100% {
+    width: 180px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

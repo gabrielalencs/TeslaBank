@@ -73,22 +73,11 @@
                 justify-content: center;
 
                 img {
-                    animation: imgHeart 2s ease infinite;
+                    animation: imgPulsate 2s ease infinite;
                     width: 180px;
                 }
             }
 
-            @keyframes imgHeart {
-                0% {
-                    width: 180px;
-                }
-                50% {
-                    width: 200px;
-                }
-                100% {
-                    width: 180px;
-                }
-            }
         }
     }
 }

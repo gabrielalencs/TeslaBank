@@ -25,7 +25,7 @@
         display: flex;
         align-items: center;
         gap: .5rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-family: 'inter', sans-serif;
         transition: all .3s;
         color: color.$primary-normal;
@@ -68,8 +68,7 @@
             border-radius: 1.6rem;
 
             @include media.desktops {
-                height: 350px;
-                // width: 360px;
+                height: 35rem;
             }
         }
 
@@ -86,7 +85,7 @@
             font-weight: 500;
 
             @include media.desktops {
-                width: 390px;
+                width: 39rem;
             }
         }
     }

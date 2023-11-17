@@ -1,0 +1,25 @@
+// Section About
+
+@keyframes moveIcon {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(1rem, -4rem, 0);
+    }
+}
+
+
+// Section Download
+
+@keyframes imgPulsate {
+    0% {
+        width: 180px;
+    }
+    50% {
+        width: 200px;
+    }
+    100% {
+        width: 180px;
+    }
+}

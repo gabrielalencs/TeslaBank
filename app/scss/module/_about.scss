@@ -21,42 +21,33 @@
             position: relative;
 
             .image-smartphone {
-                width: 380px;
+                width: 38rem;
             }
 
             .image-icon {
-                width: 96px;
+                width: 9.6rem;
                 position: absolute;
-                padding: 24px;
-                border-radius: 16px;
-                background-color: #fff2f4;
+                padding: 2.4rem;
+                border-radius: 1.6rem;
+                background-color: color.$primary-light;
             }
 
             .image-icon-one {
                 top: -2%;
                 left: 14%;
-                animation: icon-move 2s ease 2.9s infinite alternate;
+                animation: moveIcon 2s ease 2.9s infinite alternate;
             }
 
             .image-icon-two {
                 top: 40%;
                 right: -9%;
-                animation: icon-move 2s ease 1.9s infinite alternate;
+                animation: moveIcon 2s ease 1.9s infinite alternate;
             }
 
             .image-icon-three {
                 top: 70%;
                 left: -15%;
-                animation: icon-move 2s ease .6s infinite alternate;
-            }
-
-            @keyframes icon-move {
-                0% {
-                    transform: translate3d(0, 0, 0);
-                }
-                100% {
-                    transform: translate3d(10px, -40px, 0);
-                }
+                animation: moveIcon 2s ease .6s infinite alternate;
             }
         }
     }
@@ -82,7 +73,7 @@
         line-height: 2.7rem;
         font-weight: 500;
         margin-top: 3rem;
-        max-width: 732px;
+        max-width: 73.2rem;
 
         @include media.smallTablets {
             font-size: 1.9rem;
@@ -124,7 +115,7 @@
                 padding: 1.6rem;
                 width: 6.4rem;
                 height: 6.4rem;
-                border-radius: 8px;
+                border-radius: .8rem;
             }
         }
 
