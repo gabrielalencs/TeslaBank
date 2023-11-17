@@ -873,6 +873,11 @@ p, h1, h2, h3 {
   flex-direction: column;
   gap: 2.5rem;
 }
+@media (min-width: 1200px) {
+  .s-blog .blog-card-container .blog-card {
+    width: 37rem;
+  }
+}
 .s-blog .blog-card-container .card-image {
   object-fit: cover;
   height: 25rem;
@@ -893,11 +898,7 @@ p, h1, h2, h3 {
   font-size: 1.7rem;
   margin-top: 1.5rem;
   font-weight: 500;
-}
-@media (min-width: 1200px) {
-  .s-blog .blog-card-container p {
-    width: 39rem;
-  }
+  padding-right: 3rem;
 }
 
 .s-faq {
