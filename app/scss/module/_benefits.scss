@@ -1,5 +1,6 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
+@use '../utilities/mixins' as mixin;
 
 .s-benefits {
     background-color: color.$primary-light;
@@ -20,19 +21,17 @@
     }
 
     .benefits-hashtag {
-        font-size: 2rem;
-        font-family: 'DM Sans', sans-serif;
-        text-transform: uppercase;
-        color: color.$primary-dark;
-        font-weight: 600;
+        @include mixin.sectionHashtagStyles;
     }
 
     .benefits-title {
-        font-family: 'DM Sans', sans-serif;
-        font-size: 3.2rem;
-        line-height: 3.84rem;
-        font-weight: 500;
+        @include mixin.sectionsTitleStyles;
+
         margin-top: 1rem;
+
+        @include media.desktops {
+            font-size: 4.5rem;
+        }
 
         span {
             color: color.$primary-normal;

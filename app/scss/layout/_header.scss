@@ -3,7 +3,7 @@
 
 .header {
     margin: 0 auto;
-    max-width: 1300px;
+    max-width: 130rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@
     font-family: 'Inter', sans-serif;
     position: absolute;
     right: 0;
-    top: 80px;
+    top: 8rem;
     transition: all .5s;
     z-index: 2;
     visibility: hidden;
@@ -36,14 +36,14 @@
         height: max-content;
         background-color: transparent;
         display: flex;
-        gap: 40px;
+        gap: 4rem;
         visibility: visible;
         overflow-y: visible;
         transition: none;
     }
 
     &.menu-mobile {
-        height: 180px;
+        height: 18rem;
         visibility: visible;
         overflow-y: visible;
     }
@@ -53,7 +53,7 @@
     }
 
     .list-item:nth-child(1) .item-link {
-        margin-top: 35px;
+        margin-top: 3.5rem;
         position: relative;
 
         @include media.laptops {
@@ -63,8 +63,8 @@
         &-caret {
             content: "";
             position: absolute;
-            top: 7px;
-            right: -16px;
+            top: .7rem;
+            right: -1.6rem;
             border-top: 0.6rem solid color.$white-normal;
             border-right: 0.6rem solid transparent;
             border-bottom: 0;
@@ -72,7 +72,7 @@
 
             @include media.laptops {
                 border-top-color: color.$black-normal;
-                right: -15px;
+                right: -1.5rem;
             }
         }
     }
@@ -101,7 +101,7 @@
 
     .item-list-dropdown {
         background-color: color.$white-normal;
-        border-radius: 6px;
+        border-radius: .6rem;
         margin: -2rem 3rem 1.5rem;
         height: 0;
         transition: all .5s;
@@ -119,9 +119,9 @@
         @include media.laptops {
             position: absolute;
             margin-top: 0;
-            top: 30px;
-            left: -60px;
-            border: 2px solid color.$primary-light;
+            top: 3rem;
+            left: -6rem;
+            border: .2rem solid color.$primary-light;
         }
 
         .item-link-dropdown {
@@ -130,7 +130,7 @@
             font-weight: 500;
             display: inline-block;
             width: 100%;
-            padding: 5px 20px;
+            padding: .5rem 2rem;
 
             &:hover {
                 background-color: #e1e1e1;
@@ -141,14 +141,14 @@
     .open-dropdown {
         display: flex;
         flex-direction: column;
-        gap: 5px;
-        height: 189px;
+        gap: .5rem;
+        height: 18.9rem;
         padding: 0.5rem 0;
         visibility: visible;
         margin-top: 0;
 
         @include media.laptops {
-            height: 220px;
+            height: 22rem;
         }
     }
 }
@@ -158,6 +158,6 @@
 
     @include media.laptops {
         display: inline-flex;
-        gap: 10px;
+        gap: 1rem;
     }
 }

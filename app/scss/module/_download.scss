@@ -37,7 +37,6 @@
     .download-description {
         font-family: 'Inter', sans-serif;
         font-size: 1.8rem;
-        line-height: 150%;
         font-weight: 500;
         margin-top: 3rem;
 
@@ -64,9 +63,9 @@
             display: block;
 
             .image-background {
-                width: 380px;
-                height: 380px;
-                border-radius: 56px;
+                width: 38rem;
+                height: 38rem;
+                border-radius: 5.6rem;
                 background-color: color.$primary-normal;
                 display: flex;
                 align-items: center;
@@ -74,10 +73,9 @@
 
                 img {
                     animation: imgPulsate 2s ease infinite;
-                    width: 180px;
+                    width: 18rem;
                 }
             }
-
         }
     }
 }

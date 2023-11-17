@@ -33,9 +33,13 @@ img {
   width: 100%;
 }
 
+p, h1, h2, h3 {
+  transition: all 0.3s;
+}
+
 .header {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 130rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,7 +60,7 @@ img {
   font-family: "Inter", sans-serif;
   position: absolute;
   right: 0;
-  top: 80px;
+  top: 8rem;
   transition: all 0.5s;
   z-index: 2;
   visibility: hidden;
@@ -68,14 +72,14 @@ img {
     height: max-content;
     background-color: transparent;
     display: flex;
-    gap: 40px;
+    gap: 4rem;
     visibility: visible;
     overflow-y: visible;
     transition: none;
   }
 }
 .menu-list.menu-mobile {
-  height: 180px;
+  height: 18rem;
   visibility: visible;
   overflow-y: visible;
 }
@@ -83,7 +87,7 @@ img {
   position: relative;
 }
 .menu-list .list-item:nth-child(1) .item-link {
-  margin-top: 35px;
+  margin-top: 3.5rem;
   position: relative;
 }
 @media (min-width: 992px) {
@@ -94,8 +98,8 @@ img {
 .menu-list .list-item:nth-child(1) .item-link-caret {
   content: "";
   position: absolute;
-  top: 7px;
-  right: -16px;
+  top: 0.7rem;
+  right: -1.6rem;
   border-top: 0.6rem solid #FFF;
   border-right: 0.6rem solid transparent;
   border-bottom: 0;
@@ -104,7 +108,7 @@ img {
 @media (min-width: 992px) {
   .menu-list .list-item:nth-child(1) .item-link-caret {
     border-top-color: #1A191E;
-    right: -15px;
+    right: -1.5rem;
   }
 }
 .menu-list .item-link,
@@ -136,7 +140,7 @@ img {
 }
 .menu-list .item-list-dropdown {
   background-color: #FFF;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   margin: -2rem 3rem 1.5rem;
   height: 0;
   transition: all 0.5s;
@@ -157,9 +161,9 @@ img {
   .menu-list .item-list-dropdown {
     position: absolute;
     margin-top: 0;
-    top: 30px;
-    left: -60px;
-    border: 2px solid #FFF2F4;
+    top: 3rem;
+    left: -6rem;
+    border: 0.2rem solid #FFF2F4;
   }
 }
 .menu-list .item-list-dropdown .item-link-dropdown {
@@ -168,7 +172,7 @@ img {
   font-weight: 500;
   display: inline-block;
   width: 100%;
-  padding: 5px 20px;
+  padding: 0.5rem 2rem;
 }
 .menu-list .item-list-dropdown .item-link-dropdown:hover {
   background-color: #e1e1e1;
@@ -176,15 +180,15 @@ img {
 .menu-list .open-dropdown {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  height: 189px;
+  gap: 0.5rem;
+  height: 18.9rem;
   padding: 0.5rem 0;
   visibility: visible;
   margin-top: 0;
 }
 @media (min-width: 992px) {
   .menu-list .open-dropdown {
-    height: 220px;
+    height: 22rem;
   }
 }
 
@@ -194,7 +198,7 @@ img {
 @media (min-width: 992px) {
   .header-buttons {
     display: inline-flex;
-    gap: 10px;
+    gap: 1rem;
   }
 }
 
@@ -222,7 +226,7 @@ img {
   color: #FFF;
 }
 .container-footer img {
-  width: 50px;
+  width: 5rem;
   filter: brightness(0) saturate(100%) invert(100%) sepia(76%) saturate(2%) hue-rotate(62deg) brightness(116%) contrast(101%);
   display: none;
 }
@@ -255,7 +259,6 @@ img {
   font-size: 4.8rem;
   font-weight: 600;
   line-height: 5.28rem;
-  transition: all 0.3s;
 }
 .s-home .content-title br {
   display: none;
@@ -422,15 +425,14 @@ img {
   font-family: "DM Sans", sans-serif;
   font-size: 3.2rem;
   font-weight: 500;
-  line-height: 3.5rem;
+}
+.s-about .content-title span {
+  color: #EB3850;
 }
 @media (min-width: 768px) {
   .s-about .content-title {
     font-size: 4.5rem;
   }
-}
-.s-about .content-title span {
-  color: #EB3850;
 }
 .s-about .content-description {
   font-family: "Inter", sans-serif;
@@ -525,9 +527,16 @@ img {
 .container-benefits .benefits-title {
   font-family: "DM Sans", sans-serif;
   font-size: 3.2rem;
-  line-height: 3.84rem;
   font-weight: 500;
   margin-top: 1rem;
+}
+.container-benefits .benefits-title span {
+  color: #EB3850;
+}
+@media (min-width: 1200px) {
+  .container-benefits .benefits-title {
+    font-size: 4.5rem;
+  }
 }
 .container-benefits .benefits-title span {
   color: #EB3850;
@@ -628,7 +637,7 @@ img {
   font-family: "DM Sans", sans-serif;
   font-size: 3.2rem;
   font-weight: 300;
-  margin-top: 0.1px;
+  margin-top: 0.1rem;
 }
 @media (min-width: 768px) {
   .s-depositions .depostions-subtitle {
@@ -653,7 +662,7 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   padding-left: 2rem;
-  border-left: 3px solid #CB162E;
+  border-left: 0.3rem solid #CB162E;
 }
 .s-depositions .people-container p {
   font-family: "inter", sans-serif;
@@ -702,7 +711,7 @@ img {
 @media (min-width: 768px) {
   .s-cards .cards-descrption {
     font-size: 2rem;
-    max-width: 810px;
+    max-width: 81.1rem;
     margin: 2.5rem auto;
   }
 }
@@ -720,7 +729,7 @@ img {
 @media (min-width: 768px) {
   .s-cards .cards-group-buttons {
     flex-direction: row;
-    max-width: 500px;
+    max-width: 50rem;
   }
 }
 
@@ -760,7 +769,6 @@ img {
 .download-container .download-description {
   font-family: "Inter", sans-serif;
   font-size: 1.8rem;
-  line-height: 150%;
   font-weight: 500;
   margin-top: 3rem;
 }
@@ -788,9 +796,9 @@ img {
     display: block;
   }
   .download-container .download-container-image .image-background {
-    width: 380px;
-    height: 380px;
-    border-radius: 56px;
+    width: 38rem;
+    height: 38rem;
+    border-radius: 5.6rem;
     background-color: #EB3850;
     display: flex;
     align-items: center;
@@ -798,7 +806,7 @@ img {
   }
   .download-container .download-container-image .image-background img {
     animation: imgPulsate 2s ease infinite;
-    width: 180px;
+    width: 18rem;
   }
 }
 
@@ -840,7 +848,7 @@ img {
   color: #CB162E;
 }
 .s-blog .blog-link img {
-  width: 30px;
+  width: 3rem;
 }
 .s-blog .blog-card-container {
   margin-top: 6rem;
@@ -862,7 +870,7 @@ img {
 }
 .s-blog .blog-card-container .card-image {
   object-fit: cover;
-  height: 250px;
+  height: 25rem;
   border-radius: 1.6rem;
 }
 @media (min-width: 1200px) {
@@ -943,7 +951,7 @@ img {
 }
 @media (min-width: 1200px) {
   .s-faq .faq-accordion-container {
-    width: 750px;
+    width: 75rem;
     margin: 5rem auto;
   }
 }
@@ -980,7 +988,7 @@ img {
   font-weight: 500;
 }
 .s-faq .accordion-icon img {
-  width: 32px;
+  width: 3.2rem;
 }
 .s-faq .accordion-content {
   padding: 3rem 1.5rem 0;

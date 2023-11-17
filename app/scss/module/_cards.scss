@@ -40,7 +40,7 @@
 
         @include media.smallTablets {
             font-size: 2rem;
-            max-width: 810px;
+            max-width: 81.1rem;
             margin: 2.5rem auto;
         }
     }
@@ -59,7 +59,7 @@
 
         @include media.smallTablets {
             flex-direction: row;
-            max-width: 500px;
+            max-width: 50rem;
         }
     }
 }
