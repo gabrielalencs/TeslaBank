@@ -25,16 +25,21 @@ a {
   cursor: pointer;
 }
 
-p {
-  line-height: 150%;
-}
-
 img {
   width: 100%;
 }
 
-p, h1, h2, h3 {
+p,
+h1,
+h2,
+h3 {
   transition: all 0.3s;
+  line-height: 150%;
+}
+
+h1::selection, h2::selection, h3::selection, span::selection, p::selection, img::selection, a::selection, button::selection, br::selection {
+  background-color: #EB3850;
+  color: #FFF;
 }
 
 .header {
