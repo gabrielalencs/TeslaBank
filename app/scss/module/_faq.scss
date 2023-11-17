@@ -111,4 +111,16 @@
             font-weight: 500;
         }
     }
+
+    .faq-accordion.active-accordion .accordion-content {
+        display: block ;
+    }
+
+    .accordion-arrow {
+        transition: all .3s;
+    }
+
+    .faq-accordion.active-accordion .accordion-arrow {
+        transform: rotate(180deg);
+    }
 }

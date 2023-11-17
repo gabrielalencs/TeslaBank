@@ -976,6 +976,15 @@ img {
   font-size: 1.9rem;
   font-weight: 500;
 }
+.s-faq .faq-accordion.active-accordion .accordion-content {
+  display: block;
+}
+.s-faq .accordion-arrow {
+  transition: all 0.3s;
+}
+.s-faq .faq-accordion.active-accordion .accordion-arrow {
+  transform: rotate(180deg);
+}
 
 .btn {
   border: none;

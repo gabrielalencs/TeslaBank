@@ -4,6 +4,8 @@ const itemDropdownOpen = document.querySelector(".dropdown-open");
 const containerDropdown = document.querySelector(".item-list-dropdown");
 const headerContainer = document.querySelector(".header");
 const itensMenuLink = document.querySelectorAll(".menu-list .item-link");
+const accordionContainer = document.querySelectorAll(".faq-accordion");
+const accordionArrow = document.querySelector(".accordion-arrow");
 
 itensMenuLink.forEach((itemLink) => {
     itemLink.addEventListener("click", (event) => {
@@ -45,4 +47,12 @@ window.addEventListener("resize", function (event) {
         containerDropdown.classList.remove("open-dropdown");
         containerHeaderList.style.height = "";
     }
+});
+
+
+accordionContainer.forEach((item) => {
+    item.addEventListener("click", function () {
+        this.classList.toggle("active-accordion");
+        accordionArrow.classList.toggle("accordion-arrow-rotate")
+    });
 });
