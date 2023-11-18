@@ -37,7 +37,19 @@ h3 {
   line-height: 150%;
 }
 
-h1::selection, h2::selection, h3::selection, span::selection, p::selection, img::selection, a::selection, button::selection, br::selection {
+h1, h2, h3 {
+  line-height: 120%;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+span::selection,
+p::selection,
+img::selection,
+a::selection,
+button::selection,
+br::selection {
   background-color: #EB3850;
   color: #FFF;
 }
@@ -646,7 +658,7 @@ h1::selection, h2::selection, h3::selection, span::selection, p::selection, img:
   font-family: "DM Sans", sans-serif;
   font-size: 3.2rem;
   font-weight: 300;
-  margin-top: 0.1rem;
+  margin-top: 1.1rem;
 }
 @media (min-width: 768px) {
   .s-depositions .depostions-subtitle {
@@ -1114,7 +1126,8 @@ h1::selection, h2::selection, h3::selection, span::selection, p::selection, img:
   width: 32px;
 }
 
-.cards-button-1, .cards-button-2 {
+.cards-button-1,
+.cards-button-2 {
   width: 100%;
   margin: 0 auto;
   max-width: 500px;
@@ -1126,7 +1139,8 @@ h1::selection, h2::selection, h3::selection, span::selection, p::selection, img:
   color: #FFF;
 }
 @media (min-width: 768px) {
-  .cards-button-1, .cards-button-2 {
+  .cards-button-1,
+  .cards-button-2 {
     padding: 1.2rem 2rem;
   }
 }
@@ -1137,7 +1151,8 @@ h1::selection, h2::selection, h3::selection, span::selection, p::selection, img:
   color: #CB162E;
 }
 
-.download-button-1, .download-button-2 {
+.download-button-1,
+.download-button-2 {
   background-color: #353436;
   padding: 0.8rem 0;
   border-radius: 4px;
@@ -1147,35 +1162,43 @@ h1::selection, h2::selection, h3::selection, span::selection, p::selection, img:
   gap: 2.5rem;
 }
 @media (min-width: 481px) {
-  .download-button-1, .download-button-2 {
+  .download-button-1,
+  .download-button-2 {
     padding: 0.8rem 3.2rem;
     max-width: max-content;
   }
 }
-.download-button-1 img, .download-button-2 img {
+.download-button-1 img,
+.download-button-2 img {
   width: 3.2rem;
   transition: all 0.3s;
 }
-.download-button-1:hover, .download-button-2:hover {
+.download-button-1:hover,
+.download-button-2:hover {
   background-color: #1A191E;
 }
-.download-button-1:hover img, .download-button-2:hover img {
+.download-button-1:hover img,
+.download-button-2:hover img {
   transform: scale(1.2);
 }
-.download-button-1 div, .download-button-2 div {
+.download-button-1 div,
+.download-button-2 div {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
   text-align: justify;
 }
-.download-button-1 div span, .download-button-2 div span {
+.download-button-1 div span,
+.download-button-2 div span {
   color: #FFF;
 }
-.download-button-1 div span:nth-child(1), .download-button-2 div span:nth-child(1) {
+.download-button-1 div span:nth-child(1),
+.download-button-2 div span:nth-child(1) {
   font-size: 1.5rem;
   font-weight: 400;
 }
-.download-button-1 div span:nth-child(2), .download-button-2 div span:nth-child(2) {
+.download-button-1 div span:nth-child(2),
+.download-button-2 div span:nth-child(2) {
   font-size: 1.9rem;
   font-weight: 600;
 }
