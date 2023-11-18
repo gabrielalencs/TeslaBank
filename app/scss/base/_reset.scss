@@ -39,7 +39,15 @@ h3 {
     line-height: 150%;
 }
 
-h1::selection, h2::selection, h3::selection, span::selection, p::selection, img::selection, a::selection, button::selection, br::selection {
+h1::selection,
+h2::selection,
+h3::selection,
+span::selection,
+p::selection,
+img::selection,
+a::selection,
+button::selection,
+br::selection {
     background-color: color.$primary-normal;
     color: color.$white-normal;
 }

@@ -86,7 +86,7 @@
     div {
         margin-top: 5px;
         transition: width .4s ease;
-        width: 24px;   
+        width: 24px;
     }
 
     img {
@@ -98,13 +98,14 @@
     }
 
     &:hover img {
-        width: 32px; 
+        width: 32px;
     }
 }
 
 // button cards
 
-.cards-button-1, .cards-button-2 {
+.cards-button-1,
+.cards-button-2 {
     width: 100%;
     margin: 0 auto;
     max-width: 500px;
@@ -114,7 +115,7 @@
     font-weight: 600;
     background-color: color.$primary-normal;
     color: color.$white-normal;
-    
+
     @include media.smallTablets {
         padding: 1.2rem 2rem;
     }
@@ -128,7 +129,8 @@
 
 // button download
 
-.download-button-1, .download-button-2{
+.download-button-1,
+.download-button-2 {
     background-color: #353436;
     padding: .8rem 0;
     border-radius: 4px;
@@ -151,7 +153,7 @@
         background-color: color.$black-normal;
     }
 
-    &:hover img{
+    &:hover img {
         transform: scale(1.2);
     }
 

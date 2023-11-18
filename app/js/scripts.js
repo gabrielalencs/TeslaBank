@@ -7,6 +7,7 @@ const itensLink = document.querySelectorAll("main a");
 const accordionContainer = document.querySelectorAll(".faq-accordion");
 const accordionArrow = document.querySelector(".accordion-arrow");
 
+
 itensLink.forEach((itemLink) => {
     itemLink.addEventListener("click", (event) => {
         event.preventDefault();
@@ -16,6 +17,7 @@ itensLink.forEach((itemLink) => {
         event.preventDefault();
     });
 });
+
 
 // open and close mobile menu dropdown menu
 
@@ -44,6 +46,7 @@ function openMenuMobile() {
     containerHeaderList.style.height = "";
 }
 
+
 window.addEventListener("resize", function (event) {
     if (window.innerWidth > 992) {
         containerHeaderList.classList.remove("menu-mobile");
@@ -51,7 +54,6 @@ window.addEventListener("resize", function (event) {
         containerDropdown.classList.remove("open-dropdown");
         containerHeaderList.style.height = "";
     }
-
 });
 
 

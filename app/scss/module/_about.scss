@@ -1,6 +1,7 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
 @use '../utilities/mixins' as mixin;
+
 .s-about {
     padding: 0 3rem;
     margin: 10rem auto 0;
@@ -75,11 +76,11 @@
 
     .content-about-group {
         margin-top: 4.5rem;
-        
+
         @include media.desktops {
             margin-top: 0;
         }
-        
+
         & div:nth-last-child(1) {
             border-bottom: none;
         }

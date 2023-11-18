@@ -1,5 +1,5 @@
 @mixin extraSmallDevices {
-    @media (min-width: 481px)  {
+    @media (min-width: 481px) {
         @content
     }
 }
@@ -27,4 +27,3 @@
         @content
     }
 }
-
